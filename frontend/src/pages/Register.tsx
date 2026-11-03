@@ -12,8 +12,17 @@ export const Register: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
-  const { register, isRegistering } = useAuth();
+  const { register, login, isRegistering } = useAuth();
   const navigate = useNavigate();
+
+  const handleDemoLogin = async () => {
+    try {
+      await login({ email: 'test@nexhire.in', password: 'Password123!' });
+      navigate('/dashboard');
+    } catch (err: any) {
+      setError(err.response?.data?.message || 'Demo login failed');
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,6 +46,26 @@ export const Register: React.FC = () => {
         <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
         <CardDescription>Start discovering verified tech roles across India</CardDescription>
       </CardHeader>
+
+      <div className="px-6 pt-1">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={handleDemoLogin}
+          className="w-full bg-primary/10 hover:bg-primary/20 text-primary border-primary/30 font-semibold gap-2 py-5"
+        >
+          <Sparkles className="h-4 w-4" /> ⚡ One-Click Test / Demo Mode
+        </Button>
+        <div className="relative my-4">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="bg-card px-2 text-muted-foreground">or register a new candidate</span>
+          </div>
+        </div>
+      </div>
+
       <form onSubmit={handleSubmit}>
         <CardContent className="space-y-4">
           {error && (

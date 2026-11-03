@@ -36,13 +36,13 @@ export const Landing: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-          <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
-            <Link to="/register">
-              Upload Resume & Match <ArrowRight className="h-4 w-4" />
+          <Button size="lg" className="w-full sm:w-auto gap-2 bg-primary font-bold shadow-md" asChild>
+            <Link to="/login">
+              ⚡ Explore Live Demo <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
           <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-            <Link to="/login">Sign In</Link>
+            <Link to="/register">Register Candidate</Link>
           </Button>
         </div>
 
