@@ -20,12 +20,15 @@ export const useUploadResume = () => {
     mutationFn: async (file: File) => {
       const formData = new FormData();
       formData.append('file', file);
+      formData.append('resume', file);
 
       const { data } = await api.post<ApiResponse<{ profile: CandidateProfile }>>(
         '/resumes/upload',
         formData,
         {
-          headers: { 'Content-Type': 'multipart/form-data' },
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         },
       );
       return data.data;
@@ -33,6 +36,7 @@ export const useUploadResume = () => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['resume', 'profile'] });
       queryClient.invalidateQueries({ queryKey: ['jobs', 'recommended'] });
+      queryClient.invalidateQueries({ queryKey: ['refresh', 'status'] });
     },
   });
 };
@@ -54,4 +58,3 @@ export const useUpdateProfile = () => {
     },
   });
 };
-

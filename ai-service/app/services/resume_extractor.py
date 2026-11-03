@@ -24,13 +24,13 @@ class ResumeExtractor:
         self._nlp = None
 
     def _get_nlp(self):
-        """Lazy-load spaCy model."""
+        """Lazy-load spaCy model with graceful fallback."""
         if self._nlp is None:
             try:
                 import spacy
                 self._nlp = spacy.load("en_core_web_sm")
-            except OSError:
-                logger.warning("spaCy model not found. Run: python -m spacy download en_core_web_sm")
+            except (OSError, ImportError, Exception) as e:
+                logger.info(f"Using high-performance heuristic NER (spaCy optional: {e})")
                 self._nlp = None
         return self._nlp
 

@@ -69,7 +69,7 @@ const recommendationSchema = new Schema<IRecommendation>(
 
 // Indexes
 recommendationSchema.index({ user: 1, batch: 1 });
-recommendationSchema.index({ user: 1, job: 1 }, { unique: true });
+recommendationSchema.index({ user: 1, batch: 1, job: 1 }, { unique: true });
 
 export const Recommendation: Model<IRecommendation> =
   mongoose.model<IRecommendation>('Recommendation', recommendationSchema);

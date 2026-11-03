@@ -9,6 +9,7 @@ import { PlatformBadge } from './PlatformBadge';
 import { SkillBadge } from './SkillBadge';
 import { JobPosting, Recommendation } from '@/types';
 import { useToggleSaveJob } from '@/hooks/useJobs';
+import { getSafeExternalUrl } from '@/lib/utils';
 
 interface JobCardProps {
   job: JobPosting;
@@ -100,7 +101,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
             <Link to={`/dashboard/jobs/${job.id}`}>View Details</Link>
           </Button>
           <Button size="sm" asChild className="h-8 text-xs gap-1">
-            <a href={job.applicationUrl} target="_blank" rel="noopener noreferrer">
+            <a href={getSafeExternalUrl(job.applicationUrl)} target="_blank" rel="noopener noreferrer">
               Apply Direct <ExternalLink className="h-3 w-3" />
             </a>
           </Button>

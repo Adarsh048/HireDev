@@ -9,6 +9,7 @@ import { EmptyState } from '@/components/EmptyState';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { useApplications, useUpdateApplication } from '@/hooks/useApplications';
 import { ApplicationStatus } from '@/types';
+import { getSafeExternalUrl } from '@/lib/utils';
 
 const STATUS_COLUMNS: { key: ApplicationStatus; label: string; color: string }[] = [
   { key: 'saved', label: 'Saved / Staged', color: 'border-slate-500/20 bg-slate-500/5' },
@@ -94,7 +95,7 @@ export const Applications: React.FC = () => {
                   </Select>
 
                   <Button variant="ghost" size="icon" asChild className="h-8 w-8">
-                    <a href={app.job.applicationUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={getSafeExternalUrl(app.job.applicationUrl)} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </Button>

@@ -11,11 +11,6 @@ from app.config import settings
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/resume", tags=["Resume"])
 
-ALLOWED_TYPES = {
-    "application/pdf": "pdf",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "docx",
-}
-
 
 @router.post("/parse", response_model=ResumeParseResponse)
 async def parse_resume(file: UploadFile = File(...)):
@@ -24,8 +19,13 @@ async def parse_resume(file: UploadFile = File(...)):
 
     Returns extracted candidate profile with skills, education, experience, etc.
     """
-    # Validate file type
-    if file.content_type not in ALLOWED_TYPES:
+    filename = (file.filename or "").lower()
+    content_type = (file.content_type or "").lower()
+
+    is_pdf = filename.endswith(".pdf") or "pdf" in content_type
+    is_docx = filename.endswith(".docx") or filename.endswith(".doc") or "word" in content_type or "officedocument" in content_type
+
+    if not is_pdf and not is_docx:
         raise HTTPException(
             status_code=400,
             detail=f"Unsupported file type: {file.content_type}. Accepted: PDF, DOCX"
@@ -43,8 +43,7 @@ async def parse_resume(file: UploadFile = File(...)):
         )
 
     # Extract text
-    file_type = ALLOWED_TYPES[file.content_type]
-    if file_type == "pdf":
+    if is_pdf:
         raw_text = extract_text_from_pdf(file_bytes)
     else:
         raw_text = extract_text_from_docx(file_bytes)
@@ -52,7 +51,7 @@ async def parse_resume(file: UploadFile = File(...)):
     if not raw_text:
         return ResumeParseResponse(
             success=False,
-            error="Could not extract text from the uploaded file. Please ensure it's not image-based or encrypted."
+            error="Could not extract text from the uploaded file. Please ensure it is not image-based or password-protected."
         )
 
     # Extract structured data
@@ -63,5 +62,5 @@ async def parse_resume(file: UploadFile = File(...)):
         logger.error(f"Resume extraction failed: {e}", exc_info=True)
         return ResumeParseResponse(
             success=False,
-            error="Failed to process resume. Please try again."
+            error=f"Failed to process resume structure: {str(e)}"
         )

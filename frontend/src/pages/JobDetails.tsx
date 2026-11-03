@@ -22,6 +22,7 @@ import { SkillBadge } from '@/components/SkillBadge';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { useJobDetails, useToggleSaveJob } from '@/hooks/useJobs';
 import { useCreateApplication } from '@/hooks/useApplications';
+import { getSafeExternalUrl } from '@/lib/utils';
 
 export const JobDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -90,7 +91,7 @@ export const JobDetails: React.FC = () => {
                 </Button>
                 <Button size="sm" asChild className="gap-1.5">
                   <a
-                    href={job.applicationUrl}
+                    href={getSafeExternalUrl(job.applicationUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleApplyClick}

@@ -90,6 +90,9 @@ export class MatchingService {
 
     const platformBreakdown = new Map<string, number>();
 
+    // Clear previous recommendations for this user so fresh batch replaces them
+    await Recommendation.deleteMany({ user: userId });
+
     const batch = await RecommendationBatch.create({
       user: userId,
       generatedAt: new Date(),

@@ -7,6 +7,7 @@ import { CandidateProfile, ICandidateProfile } from '../models/candidateProfile.
 import { ApiError } from '../utils/ApiError';
 import { logger } from '../utils/logger';
 import { UpdateProfileInput } from '../validators/resume.validator';
+import { MatchingService } from './matching.service';
 
 export class ResumeService {
   /**
@@ -94,6 +95,11 @@ export class ResumeService {
       { $set: profileData },
       { new: true, upsert: true },
     );
+
+    // Auto-trigger matching engine so dashboard updates immediately
+    MatchingService.matchCandidate(userId).catch((matchErr) => {
+      logger.warn(`Post-upload match trigger notice: ${matchErr.message}`);
+    });
 
     return { resume, profile };
   }

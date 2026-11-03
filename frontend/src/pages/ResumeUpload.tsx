@@ -39,7 +39,12 @@ export const ResumeUpload: React.FC = () => {
       await uploadResume(file);
       navigate('/review');
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to process resume. Please try again.');
+      const msg =
+        err.response?.data?.error?.message ||
+        err.response?.data?.message ||
+        err.message ||
+        'Failed to process resume. Please try again.';
+      setError(msg);
     }
   };
 
