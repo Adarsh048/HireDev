@@ -1,12 +1,15 @@
 import rateLimit from 'express-rate-limit';
+import { env } from '../config/env';
+
+const isDev = env.NODE_ENV !== 'production';
 
 /**
  * Rate limiter for authentication endpoints.
- * 10 requests per 15-minute window.
+ * Relaxed in development for rapid testing.
  */
 export const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 10,
+  max: isDev ? 1000 : 15,
   standardHeaders: true,
   legacyHeaders: false,
   message: {
@@ -17,11 +20,10 @@ export const authLimiter = rateLimit({
 
 /**
  * General API rate limiter.
- * 100 requests per 15-minute window.
  */
 export const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
+  max: isDev ? 5000 : 100,
   standardHeaders: true,
   legacyHeaders: false,
   message: {
@@ -32,11 +34,10 @@ export const apiLimiter = rateLimit({
 
 /**
  * Upload rate limiter.
- * 5 requests per hour.
  */
 export const uploadLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: 5,
+  max: isDev ? 100 : 5,
   standardHeaders: true,
   legacyHeaders: false,
   message: {

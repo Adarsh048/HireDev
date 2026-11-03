@@ -6,6 +6,7 @@ import { User, ApiResponse } from '@/types';
 export const useAuth = () => {
   const queryClient = useQueryClient();
   const { user, setUser, setLoading } = useAuthStore();
+  const token = localStorage.getItem('accessToken');
 
   const userQuery = useQuery({
     queryKey: ['auth', 'me'],
@@ -16,11 +17,13 @@ export const useAuth = () => {
         return data.data.user;
       } catch (err) {
         setUser(null);
+        localStorage.removeItem('accessToken');
         return null;
       } finally {
         setLoading(false);
       }
     },
+    enabled: !!token,
     retry: false,
     staleTime: 5 * 60 * 1000,
   });
@@ -31,11 +34,13 @@ export const useAuth = () => {
         '/auth/login',
         credentials,
       );
-      localStorage.setItem('accessToken', data.data.tokens.accessToken);
+      const accessToken = data.data.tokens.accessToken;
+      localStorage.setItem('accessToken', accessToken);
       setUser(data.data.user);
       return data.data;
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
+      queryClient.setQueryData(['auth', 'me'], data.user);
       queryClient.invalidateQueries({ queryKey: ['auth'] });
     },
   });
@@ -46,18 +51,24 @@ export const useAuth = () => {
         '/auth/register',
         payload,
       );
-      localStorage.setItem('accessToken', data.data.tokens.accessToken);
+      const accessToken = data.data.tokens.accessToken;
+      localStorage.setItem('accessToken', accessToken);
       setUser(data.data.user);
       return data.data;
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
+      queryClient.setQueryData(['auth', 'me'], data.user);
       queryClient.invalidateQueries({ queryKey: ['auth'] });
     },
   });
 
   const logoutMutation = useMutation({
     mutationFn: async () => {
-      await api.post('/auth/logout');
+      try {
+        await api.post('/auth/logout');
+      } catch {
+        // Ignore logout network errors
+      }
       localStorage.removeItem('accessToken');
       setUser(null);
     },
@@ -69,7 +80,7 @@ export const useAuth = () => {
 
   return {
     user,
-    isLoading: userQuery.isLoading,
+    isLoading: userQuery.isLoading && !!token,
     login: loginMutation.mutateAsync,
     isLoggingIn: loginMutation.isPending,
     register: registerMutation.mutateAsync,
@@ -77,4 +88,3 @@ export const useAuth = () => {
     logout: logoutMutation.mutateAsync,
   };
 };
-

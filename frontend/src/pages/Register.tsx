@@ -20,7 +20,12 @@ export const Register: React.FC = () => {
       await login({ email: 'test@nexhire.in', password: 'Password123!' });
       navigate('/dashboard');
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Demo login failed');
+      const msg =
+        err.response?.data?.error?.message ||
+        err.response?.data?.message ||
+        err.message ||
+        'Demo login failed';
+      setError(msg);
     }
   };
 
