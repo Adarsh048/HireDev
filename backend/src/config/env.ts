@@ -7,37 +7,33 @@ import { z } from 'zod';
  * Uses Zod to parse and validate all required env vars at startup.
  */
 const envSchema = z.object({
-  PORT: z
-    .string()
-    .default('5000')
-    .transform((val) => parseInt(val, 10))
-    .pipe(z.number().positive()),
+  PORT: z.coerce.number().positive().default(5000),
 
   NODE_ENV: z
     .enum(['development', 'production', 'test'])
     .default('development'),
 
-  MONGODB_URI: z.string().min(1, 'MONGODB_URI is required'),
+  MONGODB_URI: z.string().default('mongodb://localhost:27017/devlaunch'),
 
-  REDIS_URL: z.string().min(1, 'REDIS_URL is required'),
+  REDIS_URL: z.string().default('redis://localhost:6379'),
 
-  JWT_ACCESS_SECRET: z.string().min(1, 'JWT_ACCESS_SECRET is required'),
+  JWT_ACCESS_SECRET: z
+    .string()
+    .default('devlaunch_default_access_secret_change_in_production_min_32'),
 
-  JWT_REFRESH_SECRET: z.string().min(1, 'JWT_REFRESH_SECRET is required'),
+  JWT_REFRESH_SECRET: z
+    .string()
+    .default('devlaunch_default_refresh_secret_change_in_production_min_32'),
 
   JWT_ACCESS_EXPIRY: z.string().default('15m'),
 
   JWT_REFRESH_EXPIRY: z.string().default('7d'),
 
-  AI_SERVICE_URL: z.string().url().default('http://localhost:8000'),
+  AI_SERVICE_URL: z.string().default('http://localhost:8000'),
 
   CORS_ORIGIN: z.string().default('http://localhost:5173'),
 
-  MAX_FILE_SIZE_MB: z
-    .string()
-    .default('10')
-    .transform((val) => parseInt(val, 10))
-    .pipe(z.number().positive()),
+  MAX_FILE_SIZE_MB: z.coerce.number().positive().default(10),
 });
 
 export type EnvConfig = z.infer<typeof envSchema>;
