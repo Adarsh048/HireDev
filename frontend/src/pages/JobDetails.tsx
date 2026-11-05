@@ -177,17 +177,17 @@ export const JobDetails: React.FC = () => {
           {/* Prominent Deadline Banner */}
           <div
             className={`p-4 rounded-xl border flex items-center justify-between gap-4 ${deadlineInfo.isUrgent
-                ? 'bg-amber-500/10 border-amber-500/30 text-amber-950 dark:text-amber-200'
-                : deadlineInfo.isExpired
-                  ? 'bg-destructive/10 border-destructive/20 text-destructive'
-                  : 'bg-primary/5 border-primary/20 text-foreground'
+              ? 'bg-amber-500/10 border-amber-500/30 text-amber-950 dark:text-amber-200'
+              : deadlineInfo.isExpired
+                ? 'bg-destructive/10 border-destructive/20 text-destructive'
+                : 'bg-primary/5 border-primary/20 text-foreground'
               }`}
           >
             <div className="flex items-center gap-3">
               <div
                 className={`p-2.5 rounded-lg ${deadlineInfo.isUrgent
-                    ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300'
-                    : 'bg-primary/10 text-primary'
+                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300'
+                  : 'bg-primary/10 text-primary'
                   }`}
               >
                 {deadlineInfo.isUrgent ? (
