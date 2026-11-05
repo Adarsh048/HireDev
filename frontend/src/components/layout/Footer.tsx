@@ -1,22 +1,25 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t bg-background py-8 text-sm text-muted-foreground">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 sm:px-8">
-        <div className="flex items-center gap-2">
-          <div className="h-5 w-5 rounded-md overflow-hidden flex items-center justify-center">
-            <img src="/logo.png" alt="DevLaunch" className="h-full w-full object-contain" />
+    <footer className="border-t border-slate-200/80 bg-white py-10 text-sm text-slate-500">
+      <div className="container mx-auto px-4 sm:px-8 max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex items-center gap-2.5">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0A382C] text-white">
+            <span className="font-mono font-bold text-xs text-emerald-400">&lt;/&gt;</span>
           </div>
-          <span className="font-semibold text-foreground">DevLaunch</span>
-          <span>— Autonomous Career Intelligence for Developers</span>
+          <span className="font-bold text-slate-900 text-base">DevNest</span>
+          <span className="text-slate-400 text-xs sm:text-sm">— Platform for freshers & early-career developers</span>
         </div>
-        <p className="text-xs">
-          Built strictly with genuine, verified India-located job opportunities.
-        </p>
+
+        <div className="flex items-center gap-6 text-xs sm:text-sm">
+          <Link to="/dashboard/jobs" className="hover:text-slate-900 transition-colors">Jobs</Link>
+          <Link to="/dashboard/jobs?type=internship" className="hover:text-slate-900 transition-colors">Internships</Link>
+          <Link to="/dashboard/companies" className="hover:text-slate-900 transition-colors">Companies</Link>
+          <Link to="/upload" className="hover:text-slate-900 transition-colors">Resume AI</Link>
+        </div>
       </div>
     </footer>
   );
 };
-
