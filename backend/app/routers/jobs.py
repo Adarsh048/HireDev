@@ -1,4 +1,5 @@
 import logging
+import re
 from datetime import datetime
 from typing import Optional
 from fastapi import APIRouter, HTTPException, status, Query, Depends
@@ -9,6 +10,56 @@ from app.security import get_current_user
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/jobs", tags=["Jobs"])
+
+
+@router.get("/latest")
+async def get_latest_jobs(
+    category: str = Query("all"),
+    limit: int = Query(6, ge=1, le=20),
+):
+    """
+    Public endpoint: fetches real-time genuine developer job opportunities.
+    Filtered strictly for software development positions.
+    """
+    db = get_db()
+    is_dev = re.compile(
+        r"engineer|developer|frontend|backend|full stack|software|programmer|sde|coding|web dev|mobile dev|intern",
+        re.I,
+    )
+    non_dev = re.compile(
+        r"devops|cloud trainee|qa|test engineer|cybersecurity|analyst|marketing|sales|gtm|quality|product manag|consultant|manager|executive|support|operations|campaign|growth|traffic",
+        re.I,
+    )
+
+    all_active = list(
+        db["jobpostings"].find({"isActive": True}).sort("postingDate", -1).limit(60)
+    )
+
+    # Filter strictly for developers
+    dev_jobs = [j for j in all_active if is_dev.search(j.get("title", "")) and not non_dev.search(j.get("title", ""))]
+
+    # Apply category filter
+    if category == "fulltime":
+        dev_jobs = [j for j in dev_jobs if "intern" not in j.get("employmentType", "").lower() and "intern" not in j.get("title", "").lower()]
+    elif category == "internship":
+        dev_jobs = [j for j in dev_jobs if "intern" in j.get("employmentType", "").lower() or "intern" in j.get("title", "").lower()]
+    elif category == "remote":
+        dev_jobs = [j for j in dev_jobs if j.get("workMode") == "remote" or j.get("location", {}).get("remote") is True]
+
+    # If filtered set is empty, return developer jobs
+    if not dev_jobs:
+        dev_jobs = [j for j in all_active if not non_dev.search(j.get("title", ""))]
+
+    result_jobs = [serialize_doc(j) for j in dev_jobs[:limit]]
+
+    return {
+        "success": True,
+        "data": {
+            "jobs": result_jobs,
+            "category": category,
+            "total": len(result_jobs),
+        },
+    }
 
 
 @router.get("/recommended")
