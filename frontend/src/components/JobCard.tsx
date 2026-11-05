@@ -39,7 +39,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
     : 'CO';
 
   return (
-    <Card className="group relative flex flex-col justify-between overflow-hidden border border-border/70 bg-card hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl">
+    <Card className="group relative flex flex-col justify-between overflow-hidden border border-border/70 bg-card hover:border-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl">
       <CardHeader className="pb-3 space-y-3">
         {/* Top Badges Row */}
         <div className="flex items-center justify-between gap-2">
@@ -83,12 +83,12 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
 
         {/* Company Avatar & Job Title */}
         <div className="flex items-start gap-3">
-          <div className="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-indigo-500/15 via-purple-500/10 to-pink-500/5 border border-indigo-200/60 dark:border-indigo-800/40 flex items-center justify-center font-bold text-xs text-indigo-600 dark:text-indigo-400 shadow-sm">
+          <div className="h-10 w-10 shrink-0 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center font-bold text-xs text-emerald-800 shadow-2xs">
             {companyInitials}
           </div>
 
           <div className="min-w-0 flex-1">
-            <CardTitle className="text-base font-semibold leading-tight hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors line-clamp-1">
+            <CardTitle className="text-base font-semibold leading-tight hover:text-emerald-800 dark:hover:text-emerald-400 transition-colors line-clamp-1">
               <Link to={`/dashboard/jobs/${jobId}`}>{job.title}</Link>
             </CardTitle>
             <div className="flex items-center gap-2.5 text-xs text-muted-foreground pt-1 flex-wrap">
@@ -190,7 +190,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
               </a>
             </Button>
           )}
-          <Button size="sm" asChild className="h-7 text-xs px-2.5 gap-1 shadow-sm bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium">
+          <Button size="sm" asChild className="h-7 text-xs px-2.5 gap-1 shadow-xs bg-[#0A382C] hover:bg-[#065F46] text-white font-medium">
             <a href={getSafeExternalUrl(job.applicationUrl)} target="_blank" rel="noopener noreferrer">
               Apply <ExternalLink className="h-3 w-3" />
             </a>

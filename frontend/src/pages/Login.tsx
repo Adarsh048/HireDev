@@ -29,11 +29,11 @@ export const Login: React.FC = () => {
     <Card className="border-border shadow-lg">
       <CardHeader className="space-y-1 text-center">
         <div className="flex justify-center mb-2">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white dark:bg-card border border-indigo-200 dark:border-indigo-900/50 p-2 shadow-md shadow-indigo-500/10">
-            <img src="/logo.png" alt="DevLaunch" className="h-full w-full object-contain" />
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0A382C] text-white shadow-md">
+            <span className="font-mono font-bold text-2xl text-emerald-400">&lt;/&gt;</span>
           </div>
         </div>
-        <CardTitle className="text-2xl font-bold">Welcome to DevLaunch</CardTitle>
+        <CardTitle className="text-2xl font-bold">Welcome to DevNest</CardTitle>
         <CardDescription>Enter your email and password to access your recommendations</CardDescription>
       </CardHeader>
 

@@ -20,11 +20,11 @@ export const StatsCard: React.FC<StatsCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={cn('relative overflow-hidden border border-border/70 hover:border-indigo-500/40 hover:shadow-md transition-all rounded-2xl bg-card', className)}>
+    <Card className={cn('relative overflow-hidden border border-border/70 hover:border-emerald-500/40 hover:shadow-md transition-all rounded-2xl bg-card', className)}>
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-muted-foreground">{title}</p>
-          <div className="rounded-xl bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/5 text-indigo-600 dark:text-indigo-400 p-2.5 border border-indigo-200/50 dark:border-indigo-800/30">
+          <div className="rounded-xl bg-emerald-50 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400 p-2.5 border border-emerald-200/60">
             <Icon className="h-5 w-5" />
           </div>
         </div>

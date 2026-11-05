@@ -94,7 +94,7 @@ export const Navbar: React.FC = () => {
           >
             Saved
           </Link>
-          
+
           {/* Resources Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="inline-flex items-center gap-1 px-4 py-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all outline-none">

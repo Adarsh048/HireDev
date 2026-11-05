@@ -233,6 +233,23 @@ export const Landing: React.FC = () => {
             {/* Main Visual Composition */}
             <div className="relative w-full max-w-[480px]">
               
+              {/* Floating Trust Checklist Card */}
+              <div className="absolute -top-6 -right-2 sm:-right-8 bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 rounded-2xl p-4 shadow-xl z-20 space-y-2.5 hidden sm:block">
+                {[
+                  'Verified Jobs',
+                  'Fresher Friendly',
+                  'Internships',
+                  'Daily Updates',
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2.5 text-xs font-bold text-slate-800 dark:text-slate-200">
+                    <div className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400">
+                      <Check className="h-3 w-3 stroke-[3]" />
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
               {/* Laptop Graphic */}
               <div className="relative mx-auto rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900 p-3 shadow-2xl border border-slate-700">
                 {/* Laptop Camera dot */}
@@ -460,7 +477,7 @@ export const Landing: React.FC = () => {
               return (
                 <div
                   key={job.id}
-                  className="rounded-2xl border border-slate-200/90 bg-white dark:bg-slate-900 p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-5"
+                  className="rounded-2xl border border-slate-200/90 bg-white dark:bg-slate-900 p-6 shadow-xs hover:shadow-xl hover:border-emerald-300 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between space-y-5"
                 >
                   {/* Card Header: Company logo, name, time, bookmark */}
                   <div className="flex items-center justify-between">

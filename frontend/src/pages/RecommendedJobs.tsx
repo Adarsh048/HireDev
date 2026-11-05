@@ -70,8 +70,8 @@ export const RecommendedJobs: React.FC = () => {
           </p>
         </div>
 
-        <Card className="border-dashed border-2 border-border/80 bg-card/60 p-8 sm:p-12 text-center flex flex-col items-center justify-center rounded-2xl max-w-2xl mx-auto space-y-5 shadow-sm">
-          <div className="h-14 sm:h-16 w-14 sm:w-16 rounded-2xl bg-indigo-50 dark:bg-indigo-950/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 shadow-inner">
+        <Card className="border-dashed border-2 border-border/80 bg-card/60 p-8 sm:p-12 text-center flex flex-col items-center justify-center rounded-2xl max-w-2xl mx-auto space-y-5 shadow-xs">
+          <div className="h-14 sm:h-16 w-14 sm:w-16 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 flex items-center justify-center text-emerald-800 dark:text-emerald-400 shadow-inner">
             <Sparkles className="h-7 sm:h-8 w-7 sm:w-8" />
           </div>
           <div className="space-y-2 max-w-md">
@@ -81,7 +81,7 @@ export const RecommendedJobs: React.FC = () => {
             </p>
           </div>
           <div className="pt-2 flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-            <Button asChild size="default" className="w-full sm:w-auto gap-2 shadow-sm px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium">
+            <Button asChild size="default" className="w-full sm:w-auto gap-2 shadow-xs px-6 bg-[#0A382C] hover:bg-[#065F46] text-white font-medium">
               <Link to="/upload">
                 <Upload className="h-4 w-4" /> Upload Resume Now
               </Link>
@@ -175,7 +175,7 @@ export const RecommendedJobs: React.FC = () => {
                   className="shrink-0 whitespace-nowrap text-xs px-3.5 py-2 data-[state=active]:bg-background data-[state=active]:shadow-sm rounded-lg"
                 >
                   {p.label}
-                  <span className="ml-1.5 px-1.5 py-0.2 rounded-full text-[10px] bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 font-semibold">
+                  <span className="ml-1.5 px-1.5 py-0.2 rounded-full text-[10px] bg-emerald-50 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 font-semibold">
                     {count}
                   </span>
                 </TabsTrigger>

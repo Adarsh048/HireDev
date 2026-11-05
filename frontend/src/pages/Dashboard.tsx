@@ -53,7 +53,7 @@ export const Dashboard: React.FC = () => {
             </Link>
           </Button>
           {hasRecommendations && (
-            <Button asChild size="sm" className="flex-1 sm:flex-initial bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium shadow-sm">
+            <Button asChild size="sm" className="flex-1 sm:flex-initial bg-[#0A382C] hover:bg-[#065F46] text-white font-medium shadow-xs">
               <Link to="/dashboard/jobs" className="gap-1.5">
                 View All {total} Jobs <ArrowRight className="h-4 w-4" />
               </Link>
@@ -106,7 +106,7 @@ export const Dashboard: React.FC = () => {
                   Upload Your Resume to Unlock Personalized Recommendations
                 </h3>
                 <p className="text-xs text-muted-foreground max-w-2xl leading-relaxed">
-                  Upload your resume (PDF or DOCX). DevLaunch extracts your skills and calculates semantic relevance, required experience compatibility, and graduation batch checks for every vacancy across 6 top platforms.
+                  Upload your resume (PDF or DOCX). DevNest extracts your skills and calculates semantic relevance, required experience compatibility, and graduation batch checks for every vacancy across 6 top platforms.
                 </p>
               </div>
             </div>
