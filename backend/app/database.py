@@ -23,6 +23,31 @@ def get_db() -> Database:
     return mongo.db
 
 
+def format_salary_str(salary) -> str:
+    if not salary:
+        return "Competitive"
+    if isinstance(salary, str):
+        return salary.strip() or "Competitive"
+    if isinstance(salary, dict):
+        min_v = salary.get("min")
+        max_v = salary.get("max")
+        period = salary.get("period", "yearly")
+        is_monthly = period == "monthly" or (min_v and min_v < 100000)
+        if min_v and max_v:
+            if min_v >= 100000:
+                min_l = min_v / 100000
+                max_l = max_v / 100000
+                min_s = int(min_l) if min_l.is_integer() else f"{min_l:.1f}"
+                max_s = int(max_l) if max_l.is_integer() else f"{max_l:.1f}"
+                return f"₹{min_s} - ₹{max_s} LPA"
+            return f"₹{min_v:,} - ₹{max_v:,} / month"
+        if min_v:
+            return f"₹{min_v / 100000:.1f} LPA+" if min_v >= 100000 else f"₹{min_v:,}/mo+"
+        if max_v:
+            return f"Up to ₹{max_v / 100000:.1f} LPA" if max_v >= 100000 else f"Up to ₹{max_v:,}/mo"
+    return "Competitive"
+
+
 def serialize_doc(doc: dict) -> dict:
     """Helper to convert MongoDB document to JSON-serializable dict with id string."""
     if not doc:
@@ -32,6 +57,9 @@ def serialize_doc(doc: dict) -> dict:
     if "_id" in clean:
         clean["id"] = str(clean["_id"])
         clean["_id"] = str(clean["_id"])
+
+    if "salary" in clean and isinstance(clean["salary"], (dict, str)):
+        clean["salary"] = format_salary_str(clean["salary"])
         
     for k, v in list(clean.items()):
         if isinstance(v, ObjectId):
