@@ -98,26 +98,26 @@ export const JobDetails: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-end gap-3 shrink-0">
-              {recommendation && <MatchScoreBadge score={recommendation.matchScore} size="lg" />}
-              <div className="flex items-center gap-2 flex-wrap justify-end">
+            <div className="flex flex-col sm:items-end gap-3 shrink-0 w-full sm:w-auto">
+              {recommendation && <div className="self-start sm:self-end"><MatchScoreBadge score={recommendation.matchScore} size="lg" /></div>}
+              <div className="flex items-center gap-2 flex-wrap w-full sm:w-auto justify-start sm:justify-end">
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => toggleSave.mutate({ jobId })}
-                  className="gap-1.5 h-9 text-xs"
+                  className="gap-1.5 h-9 text-xs flex-1 sm:flex-initial"
                 >
                   <Bookmark className={`h-4 w-4 ${isSaved ? 'fill-primary text-primary' : ''}`} />
                   {isSaved ? 'Saved' : 'Save Job'}
                 </Button>
                 {job.originalUrl && (
-                  <Button variant="outline" size="sm" asChild className="gap-1.5 h-9 text-xs">
+                  <Button variant="outline" size="sm" asChild className="gap-1.5 h-9 text-xs flex-1 sm:flex-initial">
                     <a href={getSafeExternalUrl(job.originalUrl)} target="_blank" rel="noopener noreferrer">
-                      View on {job.source.charAt(0).toUpperCase() + job.source.slice(1)} <ExternalLink className="h-3.5 w-3.5" />
+                      View Source <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   </Button>
                 )}
-                <Button size="sm" asChild className="gap-1.5 h-9 text-xs shadow-md bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold">
+                <Button size="sm" asChild className="gap-1.5 h-9 text-xs shadow-md bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold w-full sm:w-auto">
                   <a
                     href={getSafeExternalUrl(job.applicationUrl)}
                     target="_blank"

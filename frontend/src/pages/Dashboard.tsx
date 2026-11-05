@@ -38,22 +38,22 @@ export const Dashboard: React.FC = () => {
       {/* Welcome header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
             Welcome back{profile?.fullName ? `, ${profile.fullName.split(' ')[0]}` : ''}!
           </h1>
-          <p className="text-sm text-muted-foreground mt-0.5">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
             Discover genuine Indian tech opportunities and 24-hour verification feeds.
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <Button variant="outline" asChild size="sm">
+        <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap w-full sm:w-auto">
+          <Button variant="outline" asChild size="sm" className="flex-1 sm:flex-initial">
             <Link to="/upload" className="gap-1.5">
               <Upload className="h-4 w-4" /> {hasRecommendations ? 'Update Resume' : 'Upload Resume'}
             </Link>
           </Button>
           {hasRecommendations && (
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="flex-1 sm:flex-initial bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium shadow-sm">
               <Link to="/dashboard/jobs" className="gap-1.5">
                 View All {total} Jobs <ArrowRight className="h-4 w-4" />
               </Link>
@@ -145,7 +145,7 @@ export const Dashboard: React.FC = () => {
         </div>
 
         {hasRecommendations ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {recommendations.map((rec, i) => (
               <JobCard
                 key={rec.id || (rec as any)._id || (rec.job as any)?._id || i}
