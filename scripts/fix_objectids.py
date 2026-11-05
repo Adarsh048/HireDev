@@ -23,3 +23,4 @@ for db_name in ['nexhire', 'devlaunch']:
             if updates:
                 coll.update_one({'_id': doc['_id']}, {'$set': updates})
         print(f'{db_name}.{coll_name}: Updated {updated} string users to ObjectId')
+

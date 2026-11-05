@@ -66,9 +66,10 @@ export class MatchingService {
 
     // 3. Call AI Service
     let matchResults: any[] = [];
+    const aiBaseUrl = (env.AI_SERVICE_URL || 'http://localhost:8000').replace(/\/+$/, '');
     try {
       const response = await axios.post(
-        `${env.AI_SERVICE_URL}/api/matching/match`,
+        `${aiBaseUrl}/api/matching/match`,
         {
           candidate: candidateData,
           jobs: jobsData,

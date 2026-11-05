@@ -55,8 +55,9 @@ app.get('/api/health', (_req, res) => {
   res.status(200).json({ status: 'ok', service: 'DevLaunch Backend API' });
 });
 
-// Mount application API routes
+// Mount application API routes (both /api and root / for flexible reverse-proxy routing)
 app.use('/api', routes);
+app.use('/', routes);
 
 // Global Error Handler
 app.use(errorHandler);

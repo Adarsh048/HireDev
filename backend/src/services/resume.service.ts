@@ -42,7 +42,8 @@ export class ResumeService {
         contentType: file.mimetype,
       });
 
-      const response = await axios.post(`${env.AI_SERVICE_URL}/api/resume/parse`, formData, {
+      const aiBaseUrl = (env.AI_SERVICE_URL || 'http://localhost:8000').replace(/\/+$/, '');
+      const response = await axios.post(`${aiBaseUrl}/api/resume/parse`, formData, {
         headers: formData.getHeaders(),
         timeout: 30000,
       });
