@@ -11,11 +11,11 @@ const TECH_ROLES = [
   'Frontend Developer',
   'Backend Developer',
   'Full Stack Developer',
-  'Software Engineer',
-  'Data Analyst / Engineer',
-  'DevOps / Cloud Trainee',
-  'QA / Test Engineer',
-  'Cybersecurity Analyst',
+  'Software Development Engineer (SDE)',
+  'Web Developer',
+  'Mobile / App Developer',
+  'Python Developer',
+  'React / Node.js Developer',
 ];
 
 const INDIA_TECH_HUBS = [
@@ -79,8 +79,8 @@ export const Preferences: React.FC = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Target Job Categories</CardTitle>
-          <CardDescription>Select roles you wish to discover</CardDescription>
+          <CardTitle className="text-lg">Target Developer Roles</CardTitle>
+          <CardDescription>Select software development roles you wish to discover</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-2">
