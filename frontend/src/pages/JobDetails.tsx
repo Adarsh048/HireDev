@@ -68,7 +68,7 @@ export const JobDetails: React.FC = () => {
         <CardHeader className="space-y-4 pb-4">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
             <div className="flex items-start gap-4">
-              <div className="h-14 w-14 shrink-0 rounded-xl bg-gradient-to-br from-primary/15 via-primary/5 to-muted border border-primary/25 flex items-center justify-center font-bold text-base text-primary shadow-sm">
+              <div className="h-14 w-14 shrink-0 rounded-2xl bg-gradient-to-br from-indigo-500/15 via-purple-500/10 to-pink-500/5 border border-indigo-200/60 dark:border-indigo-800/40 flex items-center justify-center font-bold text-lg text-indigo-600 dark:text-indigo-400 shadow-sm">
                 {companyInitials}
               </div>
 
@@ -117,7 +117,7 @@ export const JobDetails: React.FC = () => {
                     </a>
                   </Button>
                 )}
-                <Button size="sm" asChild className="gap-1.5 h-9 text-xs shadow-sm">
+                <Button size="sm" asChild className="gap-1.5 h-9 text-xs shadow-md bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold">
                   <a
                     href={getSafeExternalUrl(job.applicationUrl)}
                     target="_blank"

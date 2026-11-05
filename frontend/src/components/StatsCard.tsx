@@ -20,16 +20,16 @@ export const StatsCard: React.FC<StatsCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={cn('relative overflow-hidden', className)}>
+    <Card className={cn('relative overflow-hidden border border-border/70 hover:border-indigo-500/40 hover:shadow-md transition-all rounded-2xl bg-card', className)}>
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-muted-foreground">{title}</p>
-          <div className="rounded-lg bg-primary/10 p-2 text-primary">
+          <div className="rounded-xl bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/5 text-indigo-600 dark:text-indigo-400 p-2.5 border border-indigo-200/50 dark:border-indigo-800/30">
             <Icon className="h-5 w-5" />
           </div>
         </div>
         <div className="mt-3">
-          <div className="text-2xl font-bold tracking-tight">{value}</div>
+          <div className="text-2xl font-bold tracking-tight text-foreground">{value}</div>
           {(subtitle || trend) && (
             <p className="mt-1 text-xs text-muted-foreground">
               {trend && <span className="font-medium text-emerald-600 dark:text-emerald-400 mr-1">{trend}</span>}

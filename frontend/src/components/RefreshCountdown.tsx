@@ -32,9 +32,9 @@ export const RefreshCountdown: React.FC = () => {
   }, [status?.nextRefreshAt]);
 
   return (
-    <div className="flex items-center justify-between p-4 rounded-xl border bg-card/60 backdrop-blur shadow-sm">
+    <div className="flex items-center justify-between p-4 rounded-2xl border border-indigo-200/60 dark:border-indigo-900/40 bg-gradient-to-r from-indigo-500/5 via-card to-purple-500/5 backdrop-blur shadow-sm">
       <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500/15 via-purple-500/10 to-pink-500/5 text-indigo-600 dark:text-indigo-400 border border-indigo-200/40 dark:border-indigo-800/30">
           <RefreshCw className={`h-5 w-5 ${isTriggering ? 'animate-spin' : ''}`} />
         </div>
         <div>
