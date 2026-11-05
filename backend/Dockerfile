@@ -1,18 +1,27 @@
-FROM node:20-alpine
+# Build stage
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies
 COPY package.json package-lock.json* ./
 RUN npm install
 
-# Copy source
 COPY . .
+RUN npm run build
 
-# Create uploads directory
+# Production runner stage
+FROM node:20-alpine AS runner
+
+WORKDIR /app
+
+ENV NODE_ENV=production
+
+COPY package.json package-lock.json* ./
+RUN npm install --omit=dev
+
+COPY --from=builder /app/dist ./dist
 RUN mkdir -p uploads
 
 EXPOSE 5000
 
-CMD ["npm", "run", "dev"]
-
+CMD ["node", "dist/index.js"]

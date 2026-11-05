@@ -50,13 +50,13 @@ class ResumeExtractor:
         # Extract contact info
         email = extract_email(cleaned)
         phone = extract_phone(cleaned)
-        name = self._extract_name(cleaned)
+        name = self._extract_name(raw_text)
 
         # Extract skills
         skill_data = extract_skills_from_text(cleaned)
 
         # Extract structured sections
-        education = self._extract_education(sections, cleaned)
+        education = self._extract_education(sections, raw_text)
         projects = self._extract_projects(sections)
         experience = self._extract_experience(sections)
         internships = self._extract_internships(sections)
@@ -131,7 +131,12 @@ class ResumeExtractor:
 
                 # Try to find institution nearby
                 institution = ""
-                context = edu_text[max(0, match.start() - 100):match.end() + 200]
+                context = edu_text[max(0, match.start() - 100):match.end() + 250]
+                inst_match = re.search(r'(?i)(National Institute[^\n]+|Indian Institute[^\n]+|[A-Z][A-Za-z\s,\.]{3,70}(?:Institute|University|College|IIT|NIT|IIIT|BITS)[A-Za-z\s,\.\(\)]*)', context)
+                if inst_match:
+                    cand_inst = inst_match.group(1).strip().split('\n')[0].strip()
+                    if not re.search(r'(?i)b\.?tech|m\.?tech|b\.?e\b|bachelor|master|engineering|computer', cand_inst):
+                        institution = cand_inst
 
                 # Look for year
                 year_match = re.search(r'20[0-3]\d', context)

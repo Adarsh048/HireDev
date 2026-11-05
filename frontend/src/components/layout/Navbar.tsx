@@ -23,12 +23,12 @@ export const Navbar: React.FC = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-            <Sparkles className="h-5 w-5" />
+        <Link to="/" className="flex items-center gap-2.5 font-bold text-xl tracking-tight group">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white dark:bg-card border border-indigo-200 dark:border-indigo-900/50 p-1 shadow-sm group-hover:scale-105 transition-transform overflow-hidden">
+            <img src="/logo.png" alt="DevLaunch" className="h-full w-full object-contain" />
           </div>
-          <span>
-            NexHire<span className="text-primary font-extrabold ml-0.5">AI</span>
+          <span className="font-extrabold tracking-tight">
+            Dev<span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Launch</span>
           </span>
         </Link>
 

@@ -18,21 +18,30 @@ export const Landing: React.FC = () => {
     <div className="space-y-24 py-12 md:py-20">
       {/* Hero Section */}
       <section className="container mx-auto px-4 sm:px-8 text-center max-w-4xl space-y-8">
-        <div className="inline-flex items-center gap-2 rounded-full border bg-muted/60 px-4 py-1.5 text-xs font-medium text-foreground">
-          <Sparkles className="h-3.5 w-3.5 text-primary" />
-          <span>Strictly Verified Indian Opportunities & Multi-Portal Discovery</span>
+        <div className="flex justify-center">
+          <div className="relative group">
+            <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-25 blur-xl group-hover:opacity-50 transition duration-500" />
+            <div className="relative flex h-24 w-24 items-center justify-center rounded-3xl bg-white dark:bg-card border border-indigo-200/80 dark:border-indigo-900/50 p-3.5 shadow-xl shadow-indigo-500/10">
+              <img src="/logo.png" alt="DevLaunch" className="h-full w-full object-contain filter drop-shadow-sm" />
+            </div>
+          </div>
+        </div>
+
+        <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 dark:border-indigo-900/50 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+          <Sparkles className="h-3.5 w-3.5" />
+          <span>DevLaunch — AI-Powered Tech Career Platform</span>
         </div>
 
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-          Discover Tech Roles Matching Your{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-500">
-            Real Potential
+          Launch Your Tech Career With{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
+            DevLaunch
           </span>
         </h1>
 
         <p className="mx-auto max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-          NexHire AI parses your resume with NLP, monitors genuine Indian job boards every 24 hours,
-          and ranks the top 10 verified opportunities per platform tailored to freshers and 0–2 YOE engineers.
+          DevLaunch parses your resume with AI, monitors genuine Indian tech openings every 24 hours,
+          and delivers top 80%+ matched opportunities with direct ATS application links.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">

@@ -115,6 +115,8 @@ const jobPostingSchema = new Schema<IJobPosting>(
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   },
 );
 

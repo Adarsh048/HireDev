@@ -6,18 +6,21 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def extract_text_from_pdf(file_bytes: bytes) -> Optional[str]:
+def extract_text_from_pdf(file_bytes) -> Optional[str]:
     """
-    Extract text content from a PDF file.
+    Extract text content from a PDF file (bytes or file path).
 
     Args:
-        file_bytes: Raw bytes of the PDF file.
+        file_bytes: Raw bytes of the PDF file, or path string.
 
     Returns:
         Extracted text as a string, or None if extraction fails.
     """
     try:
-        doc = fitz.open(stream=file_bytes, filetype="pdf")
+        if isinstance(file_bytes, str):
+            doc = fitz.open(file_bytes)
+        else:
+            doc = fitz.open(stream=file_bytes, filetype="pdf")
         text_parts = []
         for page_num in range(len(doc)):
             page = doc[page_num]

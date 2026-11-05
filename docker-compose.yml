@@ -1,34 +1,36 @@
 version: '3.8'
 
 services:
-  # MongoDB
+  # MongoDB Database
   mongodb:
     image: mongo:7.0
-    container_name: nexhire-mongodb
+    container_name: devlaunch-mongodb
+    restart: unless-stopped
     ports:
       - '27017:27017'
     volumes:
       - mongodb_data:/data/db
     environment:
-      MONGO_INITDB_DATABASE: nexhire
+      MONGO_INITDB_DATABASE: devlaunch
     networks:
-      - nexhire-network
+      - devlaunch-network
     healthcheck:
       test: mongosh --eval "db.adminCommand('ping')" --quiet
       interval: 10s
       timeout: 5s
       retries: 5
 
-  # Redis
+  # Redis Cache & Queue
   redis:
     image: redis:7-alpine
-    container_name: nexhire-redis
+    container_name: devlaunch-redis
+    restart: unless-stopped
     ports:
       - '6379:6379'
     volumes:
       - redis_data:/data
     networks:
-      - nexhire-network
+      - devlaunch-network
     healthcheck:
       test: ['CMD', 'redis-cli', 'ping']
       interval: 10s
@@ -40,63 +42,66 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: nexhire-backend
+    container_name: devlaunch-backend
+    restart: unless-stopped
     ports:
       - '5000:5000'
     env_file:
       - ./backend/.env
     environment:
-      NODE_ENV: development
-      MONGODB_URI: mongodb://mongodb:27017/nexhire
+      NODE_ENV: production
+      MONGODB_URI: mongodb://mongodb:27017/devlaunch
       REDIS_URL: redis://redis:6379
       AI_SERVICE_URL: http://ai-service:8000
+      PORT: 5000
     depends_on:
       mongodb:
         condition: service_healthy
       redis:
         condition: service_healthy
     volumes:
-      - ./backend/src:/app/src
-      - ./backend/uploads:/app/uploads
+      - uploads_data:/app/uploads
     networks:
-      - nexhire-network
+      - devlaunch-network
 
   # AI Service (Python / FastAPI)
   ai-service:
     build:
       context: ./ai-service
       dockerfile: Dockerfile
-    container_name: nexhire-ai-service
+    container_name: devlaunch-ai-service
+    restart: unless-stopped
     ports:
       - '8000:8000'
     env_file:
       - ./ai-service/.env
     environment:
-      DEBUG: 'true'
-    volumes:
-      - ./ai-service/app:/app/app
+      DEBUG: 'false'
+      HOST: 0.0.0.0
+      PORT: 8000
     networks:
-      - nexhire-network
+      - devlaunch-network
 
-  # Frontend (Vite dev server — dev only)
+  # Frontend (Nginx Production Web Server)
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: nexhire-frontend
+    container_name: devlaunch-frontend
+    restart: unless-stopped
     ports:
-      - '5173:5173'
-    volumes:
-      - ./frontend/src:/app/src
-      - ./frontend/index.html:/app/index.html
+      - '80:80'
+      - '5173:80'
+    depends_on:
+      - backend
     networks:
-      - nexhire-network
+      - devlaunch-network
 
 volumes:
   mongodb_data:
   redis_data:
+  uploads_data:
 
 networks:
-  nexhire-network:
+  devlaunch-network:
     driver: bridge
-

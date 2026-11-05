@@ -64,6 +64,8 @@ const recommendationSchema = new Schema<IRecommendation>(
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   },
 );
 

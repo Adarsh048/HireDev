@@ -20,10 +20,12 @@ export class JobService {
       status: 'completed',
     }).sort({ generatedAt: -1 });
 
-    const query: any = { user: userId };
-    if (latestBatch) {
-      query.batch = latestBatch._id;
+    if (!latestBatch) {
+      // Candidate has not uploaded a resume yet; recommendations are only unlocked after resume analysis
+      return { recommendations: [], total: 0 };
     }
+
+    const query: any = { user: userId, batch: latestBatch._id };
 
     const skip = (page - 1) * limit;
     const [recommendations, total] = await Promise.all([
@@ -50,10 +52,12 @@ export class JobService {
       status: 'completed',
     }).sort({ generatedAt: -1 });
 
-    const query: any = { user: userId, platform };
-    if (latestBatch) {
-      query.batch = latestBatch._id;
+    if (!latestBatch) {
+      // Candidate has not uploaded a resume yet; recommendations are only unlocked after resume analysis
+      return [];
     }
+
+    const query: any = { user: userId, platform, batch: latestBatch._id };
 
     return Recommendation.find(query)
       .populate('job')

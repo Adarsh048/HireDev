@@ -1,24 +1,25 @@
 {
-  "name": "nexhire-workspace",
+  "name": "devlaunch-workspace",
   "version": "1.0.0",
   "private": true,
-  "description": "NexHire AI - India-focused AI-powered job discovery and career intelligence platform",
+  "description": "DevLaunch — AI-Powered Tech Career & Job Discovery Platform",
   "scripts": {
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "build:backend": "cd backend && npm run build",
     "build:frontend": "cd frontend && npm run build",
-    "docker:up": "docker-compose up --build",
-    "docker:down": "docker-compose down"
+    "seed:jobs": "cd backend && npm run seed",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down"
   },
   "keywords": [
     "ai",
     "job-discovery",
-    "india",
+    "devlaunch",
     "career-intelligence",
-    "resumes"
+    "resume-matcher",
+    "india-tech-jobs"
   ],
-  "author": "NexHire Team",
-  "license": "UNLICENSED"
+  "author": "DevLaunch Team",
+  "license": "MIT"
 }
-

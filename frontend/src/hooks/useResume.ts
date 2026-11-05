@@ -34,9 +34,9 @@ export const useUploadResume = () => {
       return data.data;
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['resume', 'profile'] });
-      queryClient.invalidateQueries({ queryKey: ['jobs', 'recommended'] });
-      queryClient.invalidateQueries({ queryKey: ['refresh', 'status'] });
+      queryClient.invalidateQueries({ queryKey: ['resume'] });
+      queryClient.invalidateQueries({ queryKey: ['jobs'] });
+      queryClient.invalidateQueries({ queryKey: ['refresh'] });
     },
   });
 };
@@ -53,8 +53,8 @@ export const useUpdateProfile = () => {
       return data.data.profile;
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['resume', 'profile'] });
-      queryClient.invalidateQueries({ queryKey: ['jobs', 'recommended'] });
+      queryClient.invalidateQueries({ queryKey: ['resume'] });
+      queryClient.invalidateQueries({ queryKey: ['jobs'] });
     },
   });
 };

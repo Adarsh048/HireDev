@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileCheck2, ExternalLink, Building2, MapPin, Calendar } from 'lucide-react';
+import { FileCheck2, ExternalLink, Building2, MapPin, Calendar, Clock } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -9,7 +9,7 @@ import { EmptyState } from '@/components/EmptyState';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { useApplications, useUpdateApplication } from '@/hooks/useApplications';
 import { ApplicationStatus } from '@/types';
-import { getSafeExternalUrl } from '@/lib/utils';
+import { getSafeExternalUrl, formatDeadline } from '@/lib/utils';
 
 const STATUS_COLUMNS: { key: ApplicationStatus; label: string; color: string }[] = [
   { key: 'saved', label: 'Saved / Staged', color: 'border-slate-500/20 bg-slate-500/5' },
@@ -62,7 +62,7 @@ export const Applications: React.FC = () => {
                       {app.job.title}
                     </Link>
                   </div>
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground flex-wrap">
                     <span className="flex items-center gap-1 font-medium text-foreground">
                       <Building2 className="h-3.5 w-3.5" /> {app.job.company}
                     </span>
@@ -72,6 +72,11 @@ export const Applications: React.FC = () => {
                     {app.appliedAt && (
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3.5 w-3.5" /> Applied: {new Date(app.appliedAt).toLocaleDateString()}
+                      </span>
+                    )}
+                    {app.job.deadline && (
+                      <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 font-medium">
+                        <Clock className="h-3.5 w-3.5" /> Deadline: {new Date(app.job.deadline).toLocaleDateString()}
                       </span>
                     )}
                   </div>

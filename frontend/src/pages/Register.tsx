@@ -44,11 +44,11 @@ export const Register: React.FC = () => {
     <Card className="border-border shadow-lg">
       <CardHeader className="space-y-1 text-center">
         <div className="flex justify-center mb-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Sparkles className="h-6 w-6" />
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white dark:bg-card border border-indigo-200 dark:border-indigo-900/50 p-2 shadow-md shadow-indigo-500/10">
+            <img src="/logo.png" alt="DevLaunch" className="h-full w-full object-contain" />
           </div>
         </div>
-        <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
+        <CardTitle className="text-2xl font-bold">Join DevLaunch</CardTitle>
         <CardDescription>Start discovering verified tech roles across India</CardDescription>
       </CardHeader>
 

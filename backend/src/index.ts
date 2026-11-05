@@ -19,9 +19,24 @@ const app = express();
 
 // Security and utility middleware
 app.use(helmet());
+
+const allowedOrigins = env.CORS_ORIGIN.includes(',')
+  ? env.CORS_ORIGIN.split(',').map((o) => o.trim())
+  : env.CORS_ORIGIN;
+
 app.use(
   cors({
-    origin: env.CORS_ORIGIN,
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      if (Array.isArray(allowedOrigins)) {
+        if (allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
+          return callback(null, true);
+        }
+      } else if (allowedOrigins === '*' || allowedOrigins === origin) {
+        return callback(null, true);
+      }
+      return callback(null, true);
+    },
     credentials: true,
   }),
 );
@@ -34,7 +49,7 @@ app.use('/api', apiLimiter);
 
 // Health check endpoint
 app.get('/health', (_req, res) => {
-  res.status(200).json({ status: 'ok', service: 'NexHire Backend API' });
+  res.status(200).json({ status: 'ok', service: 'DevLaunch Backend API' });
 });
 
 // Mount application API routes
@@ -58,7 +73,7 @@ const bootstrap = async () => {
 
     // 3. Start Express server
     const server = app.listen(env.PORT, () => {
-      logger.info(`NexHire API server running on port ${env.PORT} [${env.NODE_ENV}]`);
+      logger.info(`DevLaunch API server running on port ${env.PORT} [${env.NODE_ENV}]`);
     });
 
     // Graceful shutdown

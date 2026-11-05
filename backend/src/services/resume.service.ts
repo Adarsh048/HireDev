@@ -96,10 +96,12 @@ export class ResumeService {
       { new: true, upsert: true },
     );
 
-    // Auto-trigger matching engine so dashboard updates immediately
-    MatchingService.matchCandidate(userId).catch((matchErr) => {
+    // Await matching engine so recommendations exist before the upload response returns
+    try {
+      await MatchingService.matchCandidate(userId);
+    } catch (matchErr: any) {
       logger.warn(`Post-upload match trigger notice: ${matchErr.message}`);
-    });
+    }
 
     return { resume, profile };
   }
@@ -127,6 +129,14 @@ export class ResumeService {
       { $set: updates },
       { new: true, upsert: true, runValidators: true },
     );
+
+    // Re-trigger matching engine when skills/details are updated
+    try {
+      await MatchingService.matchCandidate(userId);
+    } catch (matchErr: any) {
+      logger.warn(`Profile update match trigger notice: ${matchErr.message}`);
+    }
+
     return profile;
   }
 }
