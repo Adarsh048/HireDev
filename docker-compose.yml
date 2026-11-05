@@ -20,24 +20,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Redis Cache & Queue
-  redis:
-    image: redis:7-alpine
-    container_name: devlaunch-redis
-    restart: unless-stopped
-    ports:
-      - '6379:6379'
-    volumes:
-      - redis_data:/data
-    networks:
-      - devlaunch-network
-    healthcheck:
-      test: ['CMD', 'redis-cli', 'ping']
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # Backend API (Node.js / Express)
+  # Python Unified Backend API
   backend:
     build:
       context: ./backend
@@ -47,40 +30,18 @@ services:
     ports:
       - '5000:5000'
     environment:
-      NODE_ENV: production
-      MONGODB_URI: ${MONGODB_URI:-mongodb://mongodb:27017/devlaunch}
-      REDIS_URL: ${REDIS_URL:-redis://redis:6379}
-      AI_SERVICE_URL: ${AI_SERVICE_URL:-http://ai-service:8000}
+      DEBUG: 'false'
       PORT: 5000
+      HOST: 0.0.0.0
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongodb:27017/devlaunch}
       JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-devlaunch_prod_access_secret_min_32_characters}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-devlaunch_prod_refresh_secret_min_32_characters}
       CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost,http://localhost:5173,http://localhost:80}
     depends_on:
       mongodb:
         condition: service_healthy
-      redis:
-        condition: service_healthy
     volumes:
       - uploads_data:/app/uploads
-    networks:
-      - devlaunch-network
-
-  # AI Service (Python / FastAPI)
-  ai-service:
-    build:
-      context: ./ai-service
-      dockerfile: Dockerfile
-    container_name: devlaunch-ai-service
-    restart: unless-stopped
-    ports:
-      - '8000:8000'
-    environment:
-      DEBUG: 'false'
-      HOST: 0.0.0.0
-      PORT: 8000
-      SPACY_MODEL: en_core_web_sm
-      EMBEDDING_MODEL: all-MiniLM-L6-v2
-      BACKEND_URL: http://backend:5000
     networks:
       - devlaunch-network
 
@@ -99,11 +60,10 @@ services:
     networks:
       - devlaunch-network
 
-volumes:
-  mongodb_data:
-  redis_data:
-  uploads_data:
-
 networks:
   devlaunch-network:
     driver: bridge
+
+volumes:
+  mongodb_data:
+  uploads_data:

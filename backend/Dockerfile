@@ -1,27 +1,27 @@
-# Build stage
-FROM node:20-slim AS builder
+FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY package.json package-lock.json* ./
-RUN npm install
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
+# Install python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m spacy download en_core_web_sm
+
+# Copy application files
 COPY . .
-RUN npm run build
 
-# Production runner stage
-FROM node:20-slim AS runner
-
-WORKDIR /app
-
-ENV NODE_ENV=production
-
-COPY package.json package-lock.json* ./
-RUN npm install --omit=dev
-
-COPY --from=builder /app/dist ./dist
-RUN mkdir -p uploads
+# Create uploads directory
+RUN mkdir -p /app/uploads
 
 EXPOSE 5000
 
-CMD ["node", "dist/index.js"]
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+  CMD curl -f http://localhost:5000/health || exit 1
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000"]

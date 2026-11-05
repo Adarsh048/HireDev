@@ -1,14 +1,14 @@
 services:
-  # Backend API (Node.js / Express)
+  # DevLaunch Python Unified Backend API
   - type: web
     name: devlaunch-backend
-    env: node
+    env: python
     rootDir: backend
-    buildCommand: npm install && npm run build
-    startCommand: node dist/index.js
+    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
-      - key: NODE_ENV
-        value: production
+      - key: DEBUG
+        value: "false"
       - key: JWT_ACCESS_SECRET
         generateValue: true
       - key: JWT_REFRESH_SECRET
@@ -17,21 +17,8 @@ services:
         value: "*"
       - key: MONGODB_URI
         sync: false
-      - key: REDIS_URL
-        sync: false
 
-  # AI Service (Python / FastAPI)
-  - type: web
-    name: devlaunch-ai-service
-    env: python
-    rootDir: ai-service
-    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: DEBUG
-        value: "false"
-
-  # Frontend (React / Vite Static Site)
+  # DevLaunch Frontend (React / Vite Static Site)
   - type: web
     name: devlaunch-frontend
     env: static

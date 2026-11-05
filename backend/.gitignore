@@ -11,3 +11,13 @@ uploads/
 *.log
 logs/
 .tsbuildinfo
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
