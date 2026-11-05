@@ -9,15 +9,17 @@ import { PlatformBadge } from './PlatformBadge';
 import { SkillBadge } from './SkillBadge';
 import { JobPosting, Recommendation } from '@/types';
 import { useToggleSaveJob } from '@/hooks/useJobs';
-import { getSafeExternalUrl, formatDeadline } from '@/lib/utils';
+import { getSafeExternalUrl, formatDeadline, formatSalary } from '@/lib/utils';
 
 interface JobCardProps {
-  job: JobPosting;
+  job?: JobPosting | null;
   recommendation?: Recommendation;
   isSaved?: boolean;
 }
 
 export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved = false }) => {
+  if (!job) return null;
+
   const toggleSave = useToggleSaveJob();
   const deadlineInfo = formatDeadline(job.deadline);
   const jobId = job.id || (job as any)._id;
@@ -37,6 +39,8 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
       .join('')
       .toUpperCase()
     : 'CO';
+
+  const formattedSalary = formatSalary(job.salary);
 
   return (
     <Card className="group relative flex flex-col justify-between overflow-hidden border border-border/70 bg-card hover:border-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl">
@@ -93,10 +97,10 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
             </CardTitle>
             <div className="flex items-center gap-2.5 text-xs text-muted-foreground pt-1 flex-wrap">
               <span className="flex items-center gap-1 font-medium text-foreground">
-                <Building2 className="h-3.5 w-3.5 text-muted-foreground" /> {job.company}
+                <Building2 className="h-3.5 w-3.5 text-muted-foreground" /> {job.company || 'Tech Company'}
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="h-3.5 w-3.5" /> {job.location.city || 'India'}
+                <MapPin className="h-3.5 w-3.5" /> {job.location?.city || 'India'}
               </span>
             </div>
           </div>
@@ -104,13 +108,9 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
 
         {/* Salary & Deadline Strip */}
         <div className="flex items-center justify-between gap-2 pt-1 border-t border-border/40 text-xs">
-          {job.salary ? (
-            <span className="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-              <Banknote className="h-3.5 w-3.5" /> {job.salary}
-            </span>
-          ) : (
-            <span className="text-muted-foreground">Competitive</span>
-          )}
+          <span className="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+            <Banknote className="h-3.5 w-3.5 shrink-0" /> {formattedSalary}
+          </span>
 
           {/* Application Deadline Badge */}
           <span

@@ -84,3 +84,38 @@ export function formatDeadline(deadline?: string | Date): {
     formattedDate,
   };
 }
+
+export function formatSalary(salary: any): string {
+  if (!salary) return 'Competitive';
+  if (typeof salary === 'string') {
+    return salary.trim() || 'Competitive';
+  }
+  if (typeof salary === 'object') {
+    const min = salary.min ? Number(salary.min) : null;
+    const max = salary.max ? Number(salary.max) : null;
+    const period = salary.period || 'yearly';
+    const isMonthly = period === 'monthly' || (min !== null && min < 100000);
+
+    const formatVal = (val: number) => {
+      if (val >= 100000) {
+        const lpa = val / 100000;
+        return `₹${Number.isInteger(lpa) ? lpa : lpa.toFixed(1)} LPA`;
+      }
+      return `₹${val.toLocaleString('en-IN')}${isMonthly ? '/mo' : ''}`;
+    };
+
+    if (min && max) {
+      if (min >= 100000) {
+        const minL = min / 100000;
+        const maxL = max / 100000;
+        const minStr = Number.isInteger(minL) ? minL : minL.toFixed(1);
+        const maxStr = Number.isInteger(maxL) ? maxL : maxL.toFixed(1);
+        return `₹${minStr} - ₹${maxStr} LPA`;
+      }
+      return `₹${min.toLocaleString('en-IN')} - ₹${max.toLocaleString('en-IN')}${isMonthly ? ' / month' : ''}`;
+    }
+    if (min) return `${formatVal(min)}+`;
+    if (max) return `Up to ${formatVal(max)}`;
+  }
+  return 'Competitive';
+}

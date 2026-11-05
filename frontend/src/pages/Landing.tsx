@@ -19,7 +19,7 @@ import {
   Banknote,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { cn, formatSalary } from '@/lib/utils';
 import api from '@/lib/api';
 
 interface RealJobOpportunity {
@@ -668,7 +668,7 @@ export const Landing: React.FC = () => {
                         {job.salary && (
                           <span className="rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/60 px-2.5 py-0.5 text-xs font-medium flex items-center gap-1">
                             <Banknote className="h-3 w-3" />
-                            {job.salary}
+                            {formatSalary(job.salary)}
                           </span>
                         )}
                       </div>

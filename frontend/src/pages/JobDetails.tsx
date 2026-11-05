@@ -25,7 +25,7 @@ import { SkillBadge } from '@/components/SkillBadge';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { useJobDetails, useToggleSaveJob } from '@/hooks/useJobs';
 import { useCreateApplication } from '@/hooks/useApplications';
-import { getSafeExternalUrl, formatDeadline } from '@/lib/utils';
+import { getSafeExternalUrl, formatDeadline, formatSalary } from '@/lib/utils';
 
 export const JobDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -139,7 +139,7 @@ export const JobDetails: React.FC = () => {
               <Banknote className="h-3.5 w-3.5 text-emerald-600" /> Compensation
             </div>
             <div className="font-semibold text-emerald-600 dark:text-emerald-400">
-              {job.salary || 'Market Standard'}
+              {formatSalary(job.salary)}
             </div>
           </div>
 
