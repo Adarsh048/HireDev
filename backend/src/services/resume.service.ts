@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import axios from 'axios';
 import FormData from 'form-data';
 import fs from 'fs';
@@ -17,9 +18,14 @@ export class ResumeService {
     userId: string,
     file: Express.Multer.File,
   ): Promise<{ resume: IResume; profile: ICandidateProfile }> {
+    const userObjId = mongoose.Types.ObjectId.isValid(userId) ? new mongoose.Types.ObjectId(userId) : userId;
+    const userCondition = mongoose.Types.ObjectId.isValid(userId)
+      ? { $in: [userId, new mongoose.Types.ObjectId(userId)] }
+      : userId;
+
     // 1. Save Resume document
     const resume = await Resume.create({
-      user: userId,
+      user: userObjId,
       originalFileName: file.originalname,
       mimeType: file.mimetype,
       storagePath: file.path,
@@ -46,13 +52,11 @@ export class ResumeService {
       }
     } catch (err: any) {
       logger.error('Failed to communicate with AI parsing service:', err.message);
-      // We don't fail upload completely if AI service is temporarily down;
-      // an empty profile is initialized for the user to edit manually.
     }
 
     // 3. Upsert CandidateProfile
     const profileData: any = {
-      user: userId,
+      user: userObjId,
       fullName: parsedData?.full_name || '',
       email: parsedData?.email || '',
       phone: parsedData?.phone || '',
@@ -91,7 +95,7 @@ export class ResumeService {
     };
 
     const profile = await CandidateProfile.findOneAndUpdate(
-      { user: userId },
+      { user: userCondition },
       { $set: profileData },
       { new: true, upsert: true },
     );
@@ -110,7 +114,10 @@ export class ResumeService {
    * Retrieves candidate profile for user
    */
   public static async getProfile(userId: string): Promise<ICandidateProfile> {
-    const profile = await CandidateProfile.findOne({ user: userId });
+    const userCondition = mongoose.Types.ObjectId.isValid(userId)
+      ? { $in: [userId, new mongoose.Types.ObjectId(userId)] }
+      : userId;
+    const profile = await CandidateProfile.findOne({ user: userCondition });
     if (!profile) {
       throw ApiError.notFound('Candidate profile not found. Please upload a resume first.');
     }
@@ -124,8 +131,11 @@ export class ResumeService {
     userId: string,
     updates: UpdateProfileInput,
   ): Promise<ICandidateProfile> {
+    const userCondition = mongoose.Types.ObjectId.isValid(userId)
+      ? { $in: [userId, new mongoose.Types.ObjectId(userId)] }
+      : userId;
     const profile = await CandidateProfile.findOneAndUpdate(
-      { user: userId },
+      { user: userCondition },
       { $set: updates },
       { new: true, upsert: true, runValidators: true },
     );

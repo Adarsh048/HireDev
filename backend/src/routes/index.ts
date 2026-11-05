@@ -10,6 +10,7 @@ const router = Router();
 
 router.use('/auth', authRoutes);
 router.use('/resumes', resumeRoutes);
+router.use('/profile', resumeRoutes);
 router.use('/jobs', jobRoutes);
 router.use('/refresh', refreshRoutes);
 router.use('/applications', applicationRoutes);

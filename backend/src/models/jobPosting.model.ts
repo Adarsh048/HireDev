@@ -24,7 +24,7 @@ export interface IJobPosting extends Document {
   eligibleBatches: number[];
   requiredSkills: string[];
   description?: string;
-  salary?: string;
+  salary?: any;
   postingDate?: Date;
   deadline?: Date;
   originalUrl: string;
@@ -97,7 +97,7 @@ const jobPostingSchema = new Schema<IJobPosting>(
     eligibleBatches: [{ type: Number }],
     requiredSkills: [{ type: String }],
     description: { type: String },
-    salary: { type: String },
+    salary: { type: Schema.Types.Mixed },
     postingDate: { type: Date },
     deadline: { type: Date },
     originalUrl: {

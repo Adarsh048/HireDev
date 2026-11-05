@@ -2,6 +2,22 @@ import { Request, Response } from 'express';
 import { asyncHandler } from '../utils/asyncHandler';
 import { JobService } from '../services/job.service';
 
+export const getLatest = asyncHandler(async (req: Request, res: Response) => {
+  const category = (req.query.category as string) || 'all';
+  const limit = Math.min(20, Math.max(1, parseInt(req.query.limit as string, 10) || 6));
+
+  const jobs = await JobService.getLatestJobs(category, limit);
+
+  res.status(200).json({
+    success: true,
+    data: {
+      jobs,
+      category,
+      total: jobs.length,
+    },
+  });
+});
+
 export const getRecommended = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.userId;
   const page = parseInt(req.query.page as string, 10) || 1;

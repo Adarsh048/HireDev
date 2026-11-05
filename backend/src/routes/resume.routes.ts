@@ -11,6 +11,8 @@ const router = Router();
 router.use(authenticate);
 
 router.post('/upload', uploadLimiter, resumeUpload, upload);
+router.get('/', getProfile);
+router.patch('/', validate(updateProfileSchema), updateProfile);
 router.get('/profile', getProfile);
 router.patch('/profile', validate(updateProfileSchema), updateProfile);
 

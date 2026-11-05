@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import { CandidateProfile } from '../models/candidateProfile.model';
 import { JobPosting } from '../models/jobPosting.model';
 import { Application } from '../models/application.model';
@@ -8,7 +9,12 @@ export class AnalyticsService {
    * Returns aggregated skill demand from active jobs vs candidate skills
    */
   public static async getSkillDemandAnalytics(userId: string) {
-    const profile = await CandidateProfile.findOne({ user: userId });
+    const userObjId = mongoose.Types.ObjectId.isValid(userId) ? new mongoose.Types.ObjectId(userId) : userId;
+    const userCondition = mongoose.Types.ObjectId.isValid(userId)
+      ? { $in: [userId, new mongoose.Types.ObjectId(userId)] }
+      : userId;
+
+    const profile = await CandidateProfile.findOne({ user: userCondition });
     const userSkills = new Set(
       (profile?.skills || []).map((s) => s.toLowerCase()),
     );
@@ -30,7 +36,7 @@ export class AnalyticsService {
 
     // Find missing skills frequently cited in user's recent recommendations
     const missingSkillsAgg = await Recommendation.aggregate([
-      { $match: { user: profile?.user } },
+      { $match: { user: { $in: [userId, userObjId] } } },
       { $unwind: '$missingSkills' },
       { $group: { _id: { $toLower: '$missingSkills' }, count: { $sum: 1 } } },
       { $sort: { count: -1 } },
@@ -52,8 +58,9 @@ export class AnalyticsService {
    * Returns application tracker funnel analytics
    */
   public static async getApplicationAnalytics(userId: string) {
+    const userObjId = mongoose.Types.ObjectId.isValid(userId) ? new mongoose.Types.ObjectId(userId) : userId;
     const statusCounts = await Application.aggregate([
-      { $match: { user: userId } },
+      { $match: { user: { $in: [userId, userObjId] } } },
       { $group: { _id: '$status', count: { $sum: 1 } } },
     ]);
 

@@ -47,8 +47,11 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // Apply rate limiting to all standard API routes
 app.use('/api', apiLimiter);
 
-// Health check endpoint
+// Health check endpoints
 app.get('/health', (_req, res) => {
+  res.status(200).json({ status: 'ok', service: 'DevLaunch Backend API' });
+});
+app.get('/api/health', (_req, res) => {
   res.status(200).json({ status: 'ok', service: 'DevLaunch Backend API' });
 });
 

@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import {
+  getLatest,
   getRecommended,
   getByPlatform,
   getById,
@@ -12,9 +13,14 @@ import { jobPaginationSchema, platformParamSchema } from '../validators/job.vali
 
 const router = Router();
 
+// Public endpoint for latest genuine developer openings on Landing Page
+router.get('/latest', getLatest);
+
+// Protected endpoints requiring candidate authentication
 router.use(authenticate);
 
 router.get('/recommended', validate(jobPaginationSchema, 'query'), getRecommended);
+router.get('/recommended/platform/:platform', validate(platformParamSchema, 'params'), getByPlatform);
 router.get('/saved', validate(jobPaginationSchema, 'query'), getSavedJobs);
 router.get('/platform/:platform', validate(platformParamSchema, 'params'), getByPlatform);
 router.get('/:id', getById);

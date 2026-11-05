@@ -8,7 +8,10 @@ export class ApplicationService {
    * Retrieves all job applications for user
    */
   public static async getApplications(userId: string): Promise<IApplication[]> {
-    return Application.find({ user: userId })
+    const userCondition = mongoose.Types.ObjectId.isValid(userId)
+      ? { $in: [userId, new mongoose.Types.ObjectId(userId)] }
+      : userId;
+    return Application.find({ user: userCondition })
       .populate('job')
       .sort({ updatedAt: -1 });
   }
