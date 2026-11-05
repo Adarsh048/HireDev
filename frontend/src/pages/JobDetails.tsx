@@ -48,11 +48,11 @@ export const JobDetails: React.FC = () => {
 
   const companyInitials = job.company
     ? job.company
-        .split(' ')
-        .map((n) => n[0])
-        .slice(0, 2)
-        .join('')
-        .toUpperCase()
+      .split(' ')
+      .map((n) => n[0])
+      .slice(0, 2)
+      .join('')
+      .toUpperCase()
     : 'CO';
 
   return (
@@ -176,21 +176,19 @@ export const JobDetails: React.FC = () => {
         <CardContent className="space-y-6 pt-6">
           {/* Prominent Deadline Banner */}
           <div
-            className={`p-4 rounded-xl border flex items-center justify-between gap-4 ${
-              deadlineInfo.isUrgent
+            className={`p-4 rounded-xl border flex items-center justify-between gap-4 ${deadlineInfo.isUrgent
                 ? 'bg-amber-500/10 border-amber-500/30 text-amber-950 dark:text-amber-200'
                 : deadlineInfo.isExpired
-                ? 'bg-destructive/10 border-destructive/20 text-destructive'
-                : 'bg-primary/5 border-primary/20 text-foreground'
-            }`}
+                  ? 'bg-destructive/10 border-destructive/20 text-destructive'
+                  : 'bg-primary/5 border-primary/20 text-foreground'
+              }`}
           >
             <div className="flex items-center gap-3">
               <div
-                className={`p-2.5 rounded-lg ${
-                  deadlineInfo.isUrgent
+                className={`p-2.5 rounded-lg ${deadlineInfo.isUrgent
                     ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300'
                     : 'bg-primary/10 text-primary'
-                }`}
+                  }`}
               >
                 {deadlineInfo.isUrgent ? (
                   <AlertTriangle className="h-5 w-5" />
@@ -203,8 +201,8 @@ export const JobDetails: React.FC = () => {
                   {deadlineInfo.isUrgent
                     ? `Urgent: Application Closes Soon (${deadlineInfo.daysRemaining} days left)`
                     : deadlineInfo.isExpired
-                    ? 'Applications for this vacancy are now closed'
-                    : `Application Deadline: ${deadlineInfo.formattedDate}`}
+                      ? 'Applications for this vacancy are now closed'
+                      : `Application Deadline: ${deadlineInfo.formattedDate}`}
                 </h4>
                 <p className="text-xs text-muted-foreground mt-0.5">
                   Verified direct application link. Submit directly on the employer's official career portal before midnight.

@@ -186,16 +186,16 @@ export const Navbar: React.FC = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-2">
               <Button
                 variant="outline"
-                className="h-10 rounded-full border-slate-300 px-5 text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-all"
+                className="hidden sm:inline-flex h-9 sm:h-10 rounded-full border-slate-300 px-3.5 sm:px-4 text-xs sm:text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-all"
                 asChild
               >
                 <Link to="/login">Sign In</Link>
               </Button>
               <Button
-                className="h-10 rounded-full bg-[#0A382C] px-5 text-sm font-semibold text-white shadow-xs hover:bg-[#065F46] transition-all"
+                className="h-9 sm:h-10 rounded-full bg-[#0A382C] px-3.5 sm:px-5 text-xs sm:text-sm font-semibold text-white shadow-xs hover:bg-[#065F46] transition-all"
                 asChild
               >
                 <Link to="/register">Get Started</Link>

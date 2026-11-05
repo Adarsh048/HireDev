@@ -12,6 +12,21 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/jobs", tags=["Jobs"])
 
 
+DEV_ROLE_PATTERN = re.compile(
+    r"engineer|developer|frontend|backend|full[\s\-]*stack|software|programmer|sde|coding|web[\s\-]*dev|mobile[\s\-]*dev|intern",
+    re.I,
+)
+NON_DEV_ROLE_PATTERN = re.compile(
+    r"devops|cloud[\s\-]*trainee|qa|test[\s\-]*engineer|cybersecurity|analyst|marketing|sales|gtm|quality|product[\s\-]*manag|consultant|manager|executive|support|operations|campaign|growth|traffic|recruitment|recruiter|talent|hr\b|trainer|instructional|associate|cst|data\s*scientist",
+    re.I,
+)
+
+def is_strict_developer_role(title: str) -> bool:
+    if not title:
+        return False
+    return bool(DEV_ROLE_PATTERN.search(title)) and not bool(NON_DEV_ROLE_PATTERN.search(title))
+
+
 @router.get("/latest")
 async def get_latest_jobs(
     category: str = Query("all"),
@@ -22,21 +37,12 @@ async def get_latest_jobs(
     Filtered strictly for software development positions.
     """
     db = get_db()
-    is_dev = re.compile(
-        r"engineer|developer|frontend|backend|full stack|software|programmer|sde|coding|web dev|mobile dev|intern",
-        re.I,
-    )
-    non_dev = re.compile(
-        r"devops|cloud trainee|qa|test engineer|cybersecurity|analyst|marketing|sales|gtm|quality|product manag|consultant|manager|executive|support|operations|campaign|growth|traffic",
-        re.I,
-    )
-
     all_active = list(
         db["jobpostings"].find({"isActive": True}).sort("postingDate", -1).limit(60)
     )
 
     # Filter strictly for developers
-    dev_jobs = [j for j in all_active if is_dev.search(j.get("title", "")) and not non_dev.search(j.get("title", ""))]
+    dev_jobs = [j for j in all_active if is_strict_developer_role(j.get("title", ""))]
 
     # Apply category filter
     if category == "fulltime":
@@ -48,7 +54,7 @@ async def get_latest_jobs(
 
     # If filtered set is empty, return developer jobs
     if not dev_jobs:
-        dev_jobs = [j for j in all_active if not non_dev.search(j.get("title", ""))]
+        dev_jobs = [j for j in all_active if is_strict_developer_role(j.get("title", ""))]
 
     result_jobs = [serialize_doc(j) for j in dev_jobs[:limit]]
 
@@ -120,8 +126,9 @@ async def get_recommended_jobs(
         job_id = rec.get("job")
         if job_id:
             job_doc = db["jobpostings"].find_one({"_id": ObjectId(job_id) if ObjectId.is_valid(str(job_id)) else job_id})
-            rec_clean["job"] = serialize_doc(job_doc) if job_doc else None
-        recommendations.append(rec_clean)
+            if job_doc and is_strict_developer_role(job_doc.get("title", "")):
+                rec_clean["job"] = serialize_doc(job_doc)
+                recommendations.append(rec_clean)
 
     return {
         "success": True,
@@ -129,8 +136,8 @@ async def get_recommended_jobs(
         "pagination": {
             "page": page,
             "limit": limit,
-            "total": total,
-            "totalPages": max(1, (total + limit - 1) // limit),
+            "total": len(recommendations),
+            "totalPages": max(1, (len(recommendations) + limit - 1) // limit),
         },
     }
 
@@ -171,8 +178,9 @@ async def get_by_platform(
         job_id = rec.get("job")
         if job_id:
             job_doc = db["jobpostings"].find_one({"_id": ObjectId(job_id) if ObjectId.is_valid(str(job_id)) else job_id})
-            rec_clean["job"] = serialize_doc(job_doc) if job_doc else None
-        recommendations.append(rec_clean)
+            if job_doc and is_strict_developer_role(job_doc.get("title", "")):
+                rec_clean["job"] = serialize_doc(job_doc)
+                recommendations.append(rec_clean)
 
     return {
         "success": True,
@@ -203,8 +211,9 @@ async def get_saved_jobs(
         job_id = s.get("job")
         if job_id:
             job_doc = db["jobpostings"].find_one({"_id": ObjectId(job_id) if ObjectId.is_valid(str(job_id)) else job_id})
-            s_clean["job"] = serialize_doc(job_doc) if job_doc else None
-        saved_jobs.append(s_clean)
+            if job_doc and is_strict_developer_role(job_doc.get("title", "")):
+                s_clean["job"] = serialize_doc(job_doc)
+                saved_jobs.append(s_clean)
 
     return {
         "success": True,

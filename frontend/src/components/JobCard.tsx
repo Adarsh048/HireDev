@@ -31,11 +31,11 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
   // Company avatar initials
   const companyInitials = job.company
     ? job.company
-        .split(' ')
-        .map((n) => n[0])
-        .slice(0, 2)
-        .join('')
-        .toUpperCase()
+      .split(' ')
+      .map((n) => n[0])
+      .slice(0, 2)
+      .join('')
+      .toUpperCase()
     : 'CO';
 
   return (
@@ -114,13 +114,12 @@ export const JobCard: React.FC<JobCardProps> = ({ job, recommendation, isSaved =
 
           {/* Application Deadline Badge */}
           <span
-            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium ${
-              deadlineInfo.isUrgent
+            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium ${deadlineInfo.isUrgent
                 ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 animate-pulse'
                 : deadlineInfo.isExpired
-                ? 'bg-destructive/10 text-destructive border border-destructive/20'
-                : 'bg-muted text-muted-foreground border border-border/60'
-            }`}
+                  ? 'bg-destructive/10 text-destructive border border-destructive/20'
+                  : 'bg-muted text-muted-foreground border border-border/60'
+              }`}
             title={`Application Deadline: ${deadlineInfo.formattedDate}`}
           >
             <Clock className="h-3 w-3 shrink-0" />

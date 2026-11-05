@@ -4,7 +4,7 @@
       "$oid": "6aeac3bb0ec5060eda9ff7cf"
     },
     "source": "linkedin",
-    "sourceJobId": "linkedin-1-plane",
+    "sourceJobId": "linkedin-faff4684132f",
     "title": "Software Engineer, Backend (Node.js)",
     "company": "Plane",
     "location": {
@@ -59,8 +59,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d0"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-2-plane",
+    "source": "naukri",
+    "sourceJobId": "naukri-c9b13b7a1ee0",
     "title": "Software Engineer, Frontend (React)",
     "company": "Plane",
     "location": {
@@ -114,18 +114,18 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d1"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-3-plane",
-    "title": "Senior Software Engineer, Quality Engineering",
-    "company": "Plane",
+    "source": "indeed",
+    "sourceJobId": "indeed-99701b33a681",
+    "title": "Software Development Engineer I (Frontend)",
+    "company": "Meesho",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -135,20 +135,22 @@
       2026
     ],
     "requiredSkills": [
+      "react",
       "typescript",
-      "machine learning",
-      "git"
+      "javascript",
+      "next.js",
+      "redux"
     ],
-    "description": "About Plane Plane's mission is to build the infrastructure the world's work runs on. Every organization runs on three things: the projects it's driving, the knowledge it keeps, and the requests it fields. Plane brings all three into one open, adaptable platform: simple enough for any team to adopt, dependable enough for organizations to build on. And we are building it for a future where humans and AI agents do that work together. Plane began in public on GitHub at the end of 2022. Since then it",
-    "salary": "\u20b918,00,000 - \u20b928,00,000 PA",
+    "description": "Design and build high-performance responsive web interfaces for millions of daily active users using React and TypeScript.",
+    "salary": "\u20b914,00,000 - \u20b920,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-14T05:33:47.074Z"
     },
-    "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=Senior%20Software%20Engineer%2C%20Quality%20Engineering%20Plane&location=India",
-    "applicationUrl": "https://jobs.ashbyhq.com/plane/65c21968-e0e5-4245-824f-9f1039162b7d",
+    "originalUrl": "https://www.meesho.io/jobs",
+    "applicationUrl": "https://www.meesho.io/jobs",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -161,15 +163,15 @@
       "$date": "2026-11-04T05:33:47.150Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.150Z"
+      "$date": "2026-11-05T10:40:33.968Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d2"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-4-plane",
+    "source": "internshala",
+    "sourceJobId": "internshala-74a7edbae8e3",
     "title": "Software Engineer, Backend (Python)",
     "company": "Plane",
     "location": {
@@ -223,18 +225,18 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d3"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-5-plane",
-    "title": "GTM Engineer",
-    "company": "Plane",
+    "source": "foundit",
+    "sourceJobId": "foundit-79c476844f8a",
+    "title": "Software Development Engineer I (Backend)",
+    "company": "Meesho",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -244,20 +246,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning",
-      "git"
+      "java",
+      "spring boot",
+      "python",
+      "kafka",
+      "postgresql"
     ],
-    "description": "About Plane Plane's mission is to build the infrastructure the world's work runs on. Every organization runs on three things: the projects it's driving, the knowledge it keeps, and the requests it fields. Plane brings all three into one open, adaptable platform: simple enough for any team to adopt, dependable enough for organizations to build on. And we are building it for a future where humans and AI agents do that work together. Plane began in public on GitHub at the end of 2022. Since then it",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Architect scalable microservices handling massive transaction throughput with low latency and high availability.",
+    "salary": "\u20b915,00,000 - \u20b922,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-12-02T05:33:47.074Z"
     },
-    "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=GTM%20Engineer%20Plane&location=India",
-    "applicationUrl": "https://jobs.ashbyhq.com/plane/b62a4d81-db95-40e8-9570-1a8efd9ec0b5",
+    "originalUrl": "https://www.meesho.io/jobs",
+    "applicationUrl": "https://www.meesho.io/jobs",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -270,25 +274,25 @@
       "$date": "2026-11-04T05:33:47.150Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.150Z"
+      "$date": "2026-11-05T10:40:33.987Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d4"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-6-plane",
-    "title": "Principal Engineer, DevOps",
-    "company": "Plane",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-1862b3cd54c9",
+    "title": "Full Stack Engineer (Node.js/React)",
+    "company": "Meesho",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -298,21 +302,22 @@
       2026
     ],
     "requiredSkills": [
+      "node.js",
+      "react",
       "typescript",
-      "kubernetes",
-      "machine learning",
-      "git"
+      "mongodb",
+      "redis"
     ],
-    "description": "About Plane Plane's mission is to build the infrastructure the world's work runs on. Every organization runs on three things: the projects it's driving, the knowledge it keeps, and the requests it fields. Plane brings all three into one open, adaptable platform: simple enough for any team to adopt, dependable enough for organizations to build on. And we are building it for a future where humans and AI agents do that work together. Plane began in public on GitHub at the end of 2022. Since then it",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Deliver end-to-end features across web portals, API gateways, and distributed cloud services.",
+    "salary": "\u20b914,00,000 - \u20b920,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-16T05:33:47.074Z"
     },
-    "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=Principal%20Engineer%2C%20DevOps%20Plane&location=India",
-    "applicationUrl": "https://jobs.ashbyhq.com/plane/674d263d-08a5-4d9e-bcc8-8cf41b6aefc0",
+    "originalUrl": "https://www.meesho.io/jobs",
+    "applicationUrl": "https://www.meesho.io/jobs",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -325,7 +330,7 @@
       "$date": "2026-11-04T05:33:47.150Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.150Z"
+      "$date": "2026-11-05T10:40:33.988Z"
     }
   },
   {
@@ -333,7 +338,7 @@
       "$oid": "6aeac3bb0ec5060eda9ff7d5"
     },
     "source": "linkedin",
-    "sourceJobId": "linkedin-7-plane",
+    "sourceJobId": "linkedin-d6571163fc15",
     "title": "Principal Engineer, Frontend",
     "company": "Plane",
     "location": {
@@ -387,18 +392,18 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d6"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-8-plane",
-    "title": "Software Engineer, DevOps",
-    "company": "Plane",
+    "source": "naukri",
+    "sourceJobId": "naukri-1a527a02ca19",
+    "title": "Software Engineer - Backend (Python)",
+    "company": "Paytm",
     "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
       "country": "India",
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -408,12 +413,13 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "kubernetes",
-      "machine learning",
-      "git"
+      "python",
+      "fastapi",
+      "postgresql",
+      "docker",
+      "rest apis"
     ],
-    "description": "About Plane Plane's mission is to build the infrastructure the world's work runs on. Every organization runs on three things: the projects it's driving, the knowledge it keeps, and the requests it fields. Plane brings all three into one open, adaptable platform: simple enough for any team to adopt, dependable enough for organizations to build on. And we are building it for a future where humans and AI agents do that work together. Plane began in public on GitHub at the end of 2022. Since then it",
+    "description": "Develop high-reliability payment processing backends and real-time transaction reconciliation microservices.",
     "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
@@ -421,8 +427,8 @@
     "deadline": {
       "$date": "2026-12-04T05:33:47.074Z"
     },
-    "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer%2C%20DevOps%20Plane&location=India",
-    "applicationUrl": "https://jobs.ashbyhq.com/plane/0076054c-1df5-4f73-88b0-2af635e20f51",
+    "originalUrl": "https://jobs.lever.co/paytm",
+    "applicationUrl": "https://jobs.lever.co/paytm",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -435,15 +441,15 @@
       "$date": "2026-11-04T05:33:47.150Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.150Z"
+      "$date": "2026-11-05T10:40:33.989Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d7"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-9-signoz",
+    "source": "indeed",
+    "sourceJobId": "indeed-84f263bc5ce6",
     "title": "Staff Software Engineer - Frontend",
     "company": "SigNoz",
     "location": {
@@ -495,18 +501,18 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7d8"
     },
-    "source": "linkedin",
-    "sourceJobId": "linkedin-10-signoz",
-    "title": "AI GTM Engineer",
-    "company": "SigNoz",
+    "source": "internshala",
+    "sourceJobId": "internshala-677174432337",
+    "title": "Frontend Developer (React/TypeScript)",
+    "company": "Paytm",
     "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
       "country": "India",
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -516,18 +522,22 @@
       2026
     ],
     "requiredSkills": [
-      "machine learning"
+      "react",
+      "typescript",
+      "html5",
+      "css3",
+      "rest apis"
     ],
-    "description": "AI GTM Engineer About the role We\u2019re looking for an AI GTM Engineer to own the systems, data, and processes behind our marketing engine. This is a hands-on role. You\u2019ll work across Marketing, Sales, Product and Growth to make sure our campaigns run smoothly, our data is reliable, and we\u2019re continuously improving conversion across the funnel. You should be equally comfortable building a dashboard, fixing an email workflow, creating an account list, and figuring out why a conversion rate dropped. ",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Build modern, accessible, and fast web user experiences for India's leading digital payments ecosystem.",
+    "salary": "\u20b912,00,000 - \u20b917,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-27T05:33:47.074Z"
     },
-    "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=%20AI%20GTM%20Engineer%20SigNoz&location=India",
-    "applicationUrl": "https://jobs.ashbyhq.com/signoz/f4273207-6f44-40cc-81b0-b1d8b288dc45",
+    "originalUrl": "https://jobs.lever.co/paytm",
+    "applicationUrl": "https://jobs.lever.co/paytm",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -540,69 +550,15 @@
       "$date": "2026-11-04T05:33:47.150Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.150Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7d9"
-    },
-    "source": "naukri",
-    "sourceJobId": "naukri-1-signoz",
-    "title": "Exceptional Engineer",
-    "company": "SigNoz",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "aws",
-      "git"
-    ],
-    "description": "About SigNoz SigNoz is an open-source observability platform that helps modern engineering teams monitor, debug, and optimize their applications with deep visibility into metrics, traces, and logs \u2014 all in one place. We\u2019re built natively on OpenTelemetry and offer both self-hosted and cloud options, so teams can run observability the way they want, without vendor lock-in. We are growing fast and building core developer infra products. And we are not fooling around: 27,000+ GitHub stars 800+ cust",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-11T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.naukri.com/jobs-in-india?k=Exceptional%20Engineer%20SigNoz",
-    "applicationUrl": "https://jobs.ashbyhq.com/signoz/3b07b93a-aa97-4a4e-8b12-7c9c3273cf8c",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.990Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7da"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-2-signoz",
+    "source": "foundit",
+    "sourceJobId": "foundit-514c45839e16",
     "title": "Staff Backend Engineer - Core",
     "company": "SigNoz",
     "location": {
@@ -655,8 +611,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7db"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-3-signoz",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-49eb0dfe1998",
     "title": "Sr Backend Engineer - AI",
     "company": "SigNoz",
     "location": {
@@ -710,8 +666,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7dc"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-4-commure",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-eb2b34588195",
     "title": "Software Engineer (India)",
     "company": "Commure",
     "location": {
@@ -764,7 +720,7 @@
       "$oid": "6aeac3bb0ec5060eda9ff7dd"
     },
     "source": "naukri",
-    "sourceJobId": "naukri-5-aiprise",
+    "sourceJobId": "naukri-3ad798b1a0cf",
     "title": "Software Engineer III (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -816,8 +772,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7de"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-6-aiprise",
+    "source": "indeed",
+    "sourceJobId": "indeed-acdf2a248487",
     "title": "Software Engineer II (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -869,8 +825,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7df"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-7-aiprise",
+    "source": "internshala",
+    "sourceJobId": "internshala-242cfb2eb84a",
     "title": "Software Engineer I (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -922,8 +878,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e0"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-8-aiprise",
+    "source": "foundit",
+    "sourceJobId": "foundit-a60a6ad303fb",
     "title": "Software Engineer II, Frontend (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -976,8 +932,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e1"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-9-aiprise",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-7a1c3569d8cc",
     "title": "Software Engineer II, Full Stack (Frontend Focused) (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -1030,8 +986,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e2"
     },
-    "source": "naukri",
-    "sourceJobId": "naukri-10-aiprise",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-0e42f57ff777",
     "title": "Staff Software Engineer (Bangalore, India)",
     "company": "AiPrise",
     "location": {
@@ -1083,9 +1039,9 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e3"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-1-paytm",
-    "title": "Account Executive/ Director - AI Agentic Enterprise Sales",
+    "source": "naukri",
+    "sourceJobId": "naukri-f7148d172ea7",
+    "title": "Junior Software Engineer (Golang/Distributed Systems)",
     "company": "Paytm",
     "location": {
       "city": "Bengaluru",
@@ -1094,7 +1050,7 @@
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1104,19 +1060,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning"
+      "golang",
+      "microservices",
+      "docker",
+      "redis",
+      "git"
     ],
-    "description": "About Us Paytm is India's payment Super App offering consumers and merchants the most comprehensive payment services. As the pioneer of the mobile QR payments revolution in India, today Paytm stands as India\u2019s largest payment company by Users, Merchants, Payment Transactions, and Revenue. Paytm\u2019s mission is to drive financial inclusion across the nation and bring half a billion Indians into the mainstream economy through technology-led financial services. Paytm enables commerce for small merchan",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Contribute to ultra-low-latency financial ledger engines and distributed distributed cache layers.",
+    "salary": "\u20b913,00,000 - \u20b919,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-26T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Account%20Executive%2F%20Director%20-%20AI%20Agentic%20Enterprise%20Sales%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/9eed4fec-73f7-4114-a5d3-b2f689c92e8c",
+    "originalUrl": "https://jobs.lever.co/paytm",
+    "applicationUrl": "https://jobs.lever.co/paytm",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1129,7 +1088,7 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.991Z"
     }
   },
   {
@@ -1137,17 +1096,17 @@
       "$oid": "6aeac3bb0ec5060eda9ff7e4"
     },
     "source": "indeed",
-    "sourceJobId": "indeed-2-paytm",
-    "title": "Area Collection Manager - Manager - Lending Collections (Frontend)",
+    "sourceJobId": "indeed-d39f01684748",
+    "title": "Mobile Engineer (Android/Kotlin)",
     "company": "Paytm",
     "location": {
-      "city": "Hyderabad",
-      "state": "Telangana",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
       "country": "India",
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1157,19 +1116,22 @@
       2026
     ],
     "requiredSkills": [
-      "react",
-      "typescript"
+      "kotlin",
+      "android sdk",
+      "java",
+      "rest apis",
+      "git"
     ],
-    "description": "Role Overview The Area Collections Manager will be responsible for managing end-to-end collections across bucket segments, driving resolution strategies, ensuring portfolio health, and leading large on-ground and tele-calling teams. The role requires strong expertise in delinquency management, compliance, analytics, and team leadership. Key Responsibilities 1. Bucket & Portfolio Management \u25cf Manage collections across delinquency buckets (0\u201330, 31\u201360, and higher DPD segments) \u25cf Improve resolution",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Build and optimize high-concurrency Android applications with buttery smooth animations and offline resilience.",
+    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-10T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Area%20Collection%20Manager%20-%20Manager%20-%20Lending%20Collections%20(Frontend)%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/cf8e7e47-2871-405f-8e19-aa95fa5e6996",
+    "originalUrl": "https://jobs.lever.co/paytm",
+    "applicationUrl": "https://jobs.lever.co/paytm",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1182,15 +1144,15 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.992Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e5"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-3-paytm",
+    "source": "internshala",
+    "sourceJobId": "internshala-3a8e6dab7b36",
     "title": "Backend - Senior Software Engineer",
     "company": "Paytm",
     "location": {
@@ -1243,8 +1205,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e6"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-4-paytm",
+    "source": "foundit",
+    "sourceJobId": "foundit-622ff9ba04d3",
     "title": "Backend - TL/STL",
     "company": "Paytm",
     "location": {
@@ -1297,8 +1259,8 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e7"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-5-paytm",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-8ff23a956d9d",
     "title": "Backend- Senior Technical Lead",
     "company": "Paytm",
     "location": {
@@ -1350,18 +1312,18 @@
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e8"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-6-paytm",
-    "title": "Campaign Management - Campaign Ads I Exp- 7 -11 Years",
-    "company": "Paytm",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-15e7608b2dd9",
+    "title": "Full Stack Developer (Python/React)",
+    "company": "Plane",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1371,19 +1333,22 @@
       2026
     ],
     "requiredSkills": [
+      "python",
+      "django",
+      "react",
       "typescript",
-      "machine learning"
+      "postgresql"
     ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About Role:- The Campaign Operations Lead will own campaign delivery, performance optimization, and team excellence for managed service advertisers",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Develop open-source project management tools and real-time collaboration canvas engines.",
+    "salary": "\u20b914,00,000 - \u20b922,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-21T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Campaign%20Management%20-%20Campaign%20Ads%20I%20Exp-%207%20-11%20Years%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/ff4be077-f801-4d2d-9ea9-4b062a5eb669",
+    "originalUrl": "https://jobs.ashbyhq.com/plane",
+    "applicationUrl": "https://jobs.ashbyhq.com/plane",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1396,25 +1361,25 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.993Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7e9"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-7-paytm",
-    "title": "Campaign Management- Traffic Management- Growth",
-    "company": "Paytm",
+    "source": "naukri",
+    "sourceJobId": "naukri-38e0f86c04ec",
+    "title": "Junior Backend Engineer (Go/Python)",
+    "company": "SigNoz",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1424,10 +1389,13 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning"
+      "golang",
+      "python",
+      "clickhouse",
+      "docker",
+      "linux"
     ],
-    "description": "About Paytm Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Role: We are looking for a detail-oriented and proactive CLM Operations candidate to join the Paytm Campaign Lifecycle Management (CLM)",
+    "description": "Build high-throughput telemetry ingestion pipelines in Go and ClickHouse for modern cloud-native systems.",
     "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
@@ -1435,8 +1403,8 @@
     "deadline": {
       "$date": "2026-11-30T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Campaign%20Management-%20Traffic%20Management-%20Growth%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/772f3cdd-4343-4f8d-9140-b40f3b64449a",
+    "originalUrl": "https://jobs.ashbyhq.com/signoz",
+    "applicationUrl": "https://jobs.ashbyhq.com/signoz",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1449,7 +1417,7 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.994Z"
     }
   },
   {
@@ -1457,19 +1425,19 @@
       "$oid": "6aeac3bb0ec5060eda9ff7ea"
     },
     "source": "indeed",
-    "sourceJobId": "indeed-8-paytm",
-    "title": "Campaign Management- User Growth",
-    "company": "Paytm",
+    "sourceJobId": "indeed-1a3bba17bd9f",
+    "title": "Software Development Engineer Intern",
+    "company": "Plane",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "internship",
     "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
+    "maxExperienceMonths": 12,
     "eligibleBatches": [
       2023,
       2024,
@@ -1477,19 +1445,22 @@
       2026
     ],
     "requiredSkills": [
+      "react",
       "typescript",
-      "machine learning"
+      "node.js",
+      "git",
+      "rest apis"
     ],
-    "description": "About Paytm Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Role: We are looking for an experienced Campaign Manager who will manage end-to-end growth campaign execution and will analyze campaign",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Work alongside founding engineers to build UI components, optimize bundle sizes, and write clean unit tests.",
+    "salary": "\u20b935,000 - \u20b950,000 / month",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-14T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Campaign%20Management-%20User%20Growth%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/9f059149-ed57-4539-9e06-0855096e7842",
+    "originalUrl": "https://jobs.ashbyhq.com/plane",
+    "applicationUrl": "https://jobs.ashbyhq.com/plane",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1502,80 +1473,27 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7eb"
-    },
-    "source": "indeed",
-    "sourceJobId": "indeed-9-paytm",
-    "title": "CST - Associate - Email CST",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading financial services company that offers full-stack payments & financial solutions to consumers, offline merchants, and online platforms. The company is on a mission to bring half a billion Indians into the mainstream economy through payments, commerce, banking, investments, and financial services. One97 Communications Limited that owns the brand Paytm is founded by Vijay Shekhar Sharma. About the Team: The OCL Grievance Redressal Team manages customer grievances",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-23T05:33:47.074Z"
-    },
-    "originalUrl": "https://in.indeed.com/jobs?q=CST%20-%20Associate%20-%20Email%20CST%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/715e52dd-0a51-4ff7-be68-855112e56b99",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.995Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7ec"
     },
-    "source": "indeed",
-    "sourceJobId": "indeed-10-paytm",
-    "title": "Enterprise GTM Lead, Inference and Agentic AI",
-    "company": "Paytm",
+    "source": "internshala",
+    "sourceJobId": "internshala-8820d9615000",
+    "title": "Backend Engineering Intern",
+    "company": "SigNoz",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
       "remote": false
     },
     "workMode": "on-site",
-    "employmentType": "Full-time",
+    "employmentType": "internship",
     "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
+    "maxExperienceMonths": 12,
     "eligibleBatches": [
       2023,
       2024,
@@ -1583,20 +1501,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning",
-      "git"
+      "python",
+      "golang",
+      "docker",
+      "rest apis",
+      "postgresql"
     ],
-    "description": "About Paytm Paytm is a pioneer of digital payments in India, serving over 450 million consumers and 45 million merchants across payments, financial services, and commerce. Over the years, Paytm has built deep in-house capabilities across technology, data, and operations to operate at scale with high reliability. Paytm is building a full stack AI platform focussed on Inference and Agents, enabling large enterprises to deploy AI driven automation across sales, service, operations, and analytics. T",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Contribute to distributed query engines, telemetry parsing microservices, and observability dashboard APIs.",
+    "salary": "\u20b940,000 - \u20b960,000 / month",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-12-02T05:33:47.074Z"
     },
-    "originalUrl": "https://in.indeed.com/jobs?q=Enterprise%20GTM%20Lead%2C%20Inference%20and%20Agentic%20AI%20Paytm&l=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/e5145511-6cbd-4168-a5ad-24bc925487db",
+    "originalUrl": "https://jobs.ashbyhq.com/signoz",
+    "applicationUrl": "https://jobs.ashbyhq.com/signoz",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1609,27 +1529,27 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.995Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7ed"
     },
-    "source": "internshala",
-    "sourceJobId": "internshala-1-paytm",
-    "title": "Growth Operations - Campaign - Paytm Money",
-    "company": "Paytm",
+    "source": "foundit",
+    "sourceJobId": "foundit-dd6bab63ae90",
+    "title": "Web Development Intern (React/Next.js)",
+    "company": "Razorpay",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "internship",
     "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
+    "maxExperienceMonths": 12,
     "eligibleBatches": [
       2023,
       2024,
@@ -1637,19 +1557,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning"
+      "react",
+      "javascript",
+      "html5",
+      "css3",
+      "git"
     ],
-    "description": "Paytm Money is building the next generation of wealth management and investment products for India. As a Growth, Process & Data Specialist at the, you will sit at the intersection of analytics, CRM, and growth strategy - owning the data infrastructure and intelligence layer that powers our user acquisition, engagement, and retention campaigns. This is a high-ownership, cross-functional role where you will independently drive cohort analytics, campaign attribution, CLTV modelling, and business re",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Implement modern accessible checkout flows and merchant dashboard widgets using React.",
+    "salary": "\u20b935,000 - \u20b950,000 / month",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-16T05:33:47.074Z"
     },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/fa5befe1-43f5-417f-a1de-a989264e1871",
+    "originalUrl": "https://jobs.lever.co/razorpay",
+    "applicationUrl": "https://jobs.lever.co/razorpay",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1662,184 +1585,25 @@
       "$date": "2026-11-04T05:33:47.151Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7ee"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-2-paytm",
-    "title": "Intern - Talent Acquisition",
-    "company": "Paytm",
-    "location": {
-      "city": "Gurugram",
-      "state": "Haryana",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Paytm Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce.Paytm's mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. Job Title Talent Acquisition Intern \u2013 Non-Tech Recruitment About the Role As a Talent Acquisition Intern (Non-Tech), you will play an active role ",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-25T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/internships/",
-    "applicationUrl": "https://jobs.lever.co/paytm/426a6834-1397-4e65-94af-69874c790805",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7ef"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-3-paytm",
-    "title": "Intern- HR Onboarding",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "Job Title: HR Onboarding Intern Positions (MBA / Graduate) Location: Noida Mode: Work from Office (5 days a week) Duration: 3 Months About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. Role & Require",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-12-04T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/internships/",
-    "applicationUrl": "https://jobs.lever.co/paytm/0ecd9d93-e4f3-4dd0-a22e-852fec9b6e02",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f0"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-4-paytm",
-    "title": "Intern-Talent Acquisition",
-    "company": "Paytm",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. Key Responsibilities: \u25cf Sourcing & Outreach: Use LinkedIn Recruiter, Boolean searches, and job boards to find \"passive\" candidates for open roles. ",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-18T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/internships/",
-    "applicationUrl": "https://jobs.lever.co/paytm/9d497980-2032-440c-8bac-63fb53938acc",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.151Z"
+      "$date": "2026-11-05T10:40:33.996Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7f1"
     },
-    "source": "internshala",
-    "sourceJobId": "internshala-5-paytm",
-    "title": "Lead/Senior Lead - Data Devops",
-    "company": "Paytm",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-cf9b9d2936c2",
+    "title": "Software Engineer - Frontend (React)",
+    "company": "Hasura",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
-      "remote": false
+      "remote": true
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "remote",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1849,20 +1613,21 @@
       2026
     ],
     "requiredSkills": [
+      "react",
       "typescript",
-      "kubernetes",
-      "machine learning"
+      "graphql",
+      "tailwind css"
     ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. Job Overview: We are seeking an experienced Data DevOps to lead our Data DevOps team in building, managing, and optimizing high-scale, secure, and ",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Build the next generation of Hasura Cloud console with complex GraphQL query builders and interactive schema editors.",
+    "salary": "\u20b916,00,000 - \u20b924,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-27T05:33:47.074Z"
     },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/4a5c3f39-94d6-4581-9b73-65a2895cb03d",
+    "originalUrl": "https://hasura.io/careers",
+    "applicationUrl": "https://hasura.io/careers",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1875,25 +1640,25 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+      "$date": "2026-11-05T10:40:33.998Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7f2"
     },
-    "source": "internshala",
-    "sourceJobId": "internshala-6-paytm",
-    "title": "Pre Sales - AI Solution Architect",
-    "company": "Paytm",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-906ad83543c2",
+    "title": "Software Engineer - Backend (Go/Python)",
+    "company": "Hasura",
     "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
-      "remote": false
+      "remote": true
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "remote",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -1903,19 +1668,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning"
+      "golang",
+      "python",
+      "postgresql",
+      "docker",
+      "graphql"
     ],
-    "description": "About Us Paytm is India's payment Super App offering consumers and merchants the most comprehensive payment services. As the pioneer of the mobile QR payments revolution in India, today, Paytm stands as India\u2019s largest payment company by Users, Merchants, Payment Transactions, and Revenue. Paytm\u2019s mission is to drive financial inclusion in India and bring half a billion Indians into the mainstream economy through technology-led financial Services. Paytm enables commerce for small merchants and d",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Build distributed query compilation engines translating GraphQL queries to optimized SQL statements.",
+    "salary": "\u20b916,00,000 - \u20b925,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-11T05:33:47.074Z"
     },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/e825fb5a-2ede-43ab-84dd-90e00dd9e954",
+    "originalUrl": "https://hasura.io/careers",
+    "applicationUrl": "https://hasura.io/careers",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -1928,186 +1696,25 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f3"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-7-paytm",
-    "title": "Process Trainer - Team Lead - LRM",
-    "company": "Paytm",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytms mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Role: Paytm is looking for an experienced, dynamic and experienced Trainer to design and deliver impactful training programs for sales tea",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-20T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/2a95d899-9540-4a5c-bf95-249745ed82c3",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f4"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-8-paytm",
-    "title": "Process Trainer - TL - Lending",
-    "company": "Paytm",
-    "location": {
-      "city": "Pune",
-      "state": "Maharashtra",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytms mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Role: Paytm is looking for an experienced, dynamic and experienced Trainer to design and deliver impactful training programs for sales tea",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-29T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/601f0c35-ed32-4447-b39d-82cd4c6e14b8",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+      "$date": "2026-11-05T10:40:33.999Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7f5"
     },
-    "source": "internshala",
-    "sourceJobId": "internshala-9-paytm",
-    "title": "Product Management - AI Payments",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "rest api",
-      "machine learning",
-      "git"
-    ],
-    "description": "About Us: Paytm is India\u2019s leading mobile payments and financial services distribution company. A pioneer of the mobile QR payments revolution, Paytm builds technology that enables small businesses and consumers to participate in the digital economy. Our mission is to serve half a billion Indians and bring them into the mainstream economy through technology. About the role: The person in this role owns products in the UAE market.. That means finding the problem, shaping the solution, launching i",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-13T05:33:47.074Z"
-    },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/e09a1fc4-47e2-4c49-b17e-6993b958d6ef",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f6"
-    },
-    "source": "internshala",
-    "sourceJobId": "internshala-10-paytm",
-    "title": "Product Management - Data Product | Experience : 5-8 yrs",
-    "company": "Paytm",
+    "source": "naukri",
+    "sourceJobId": "naukri-c2207fd27944",
+    "title": "SDE I - Backend (Java/Kotlin)",
+    "company": "Swiggy",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -2117,19 +1724,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "machine learning"
+      "java",
+      "spring boot",
+      "kafka",
+      "mysql",
+      "aws"
     ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Team: We are the Central Data and AI Product team, responsible for building and managing the analytical products and datasets that power ",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
+    "description": "Power real-time order tracking, route optimization microservices, and delivery partner dispatch systems.",
+    "salary": "\u20b914,00,000 - \u20b920,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
-      "$date": "2026-11-22T05:33:47.074Z"
+      "$date": "2026-11-13T05:33:47.074Z"
     },
-    "originalUrl": "https://internshala.com/jobs/",
-    "applicationUrl": "https://jobs.lever.co/paytm/26a6a342-55db-4262-8e75-648bd8338fd0",
+    "originalUrl": "https://careers.swiggy.com",
+    "applicationUrl": "https://careers.swiggy.com",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -2142,15 +1752,71 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
+      "$date": "2026-11-05T10:40:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6aeac3bb0ec5060eda9ff7f6"
+    },
+    "source": "indeed",
+    "sourceJobId": "indeed-d7ad8030615d",
+    "title": "Frontend Engineer (React/Redux)",
+    "company": "Swiggy",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full-time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "react",
+      "javascript",
+      "typescript",
+      "webpack",
+      "css3"
+    ],
+    "description": "Develop consumer-facing web experiences with lightning-fast load times and seamless cart workflows.",
+    "salary": "\u20b914,00,000 - \u20b920,00,000 PA",
+    "postingDate": {
+      "$date": "2026-11-01T00:00:00Z"
+    },
+    "deadline": {
+      "$date": "2026-11-22T05:33:47.074Z"
+    },
+    "originalUrl": "https://careers.swiggy.com",
+    "applicationUrl": "https://careers.swiggy.com",
+    "firstDiscovered": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "lastVerified": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "isActive": true,
+    "__v": 0,
+    "createdAt": {
       "$date": "2026-11-04T05:33:47.152Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-05T10:40:34.002Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff7f7"
     },
-    "source": "foundit",
-    "sourceJobId": "foundit-1-paytm",
+    "source": "internshala",
+    "sourceJobId": "internshala-497650ecc754",
     "title": "Senior Software Engineer \u2013 Backend (Travel)",
     "company": "Paytm",
     "location": {
@@ -2206,443 +1872,20 @@
   },
   {
     "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f8"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-2-paytm",
-    "title": "Talent Acquisition Intern",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "Location: Noida Duration: 3 months Working days: 5 days work from office About Paytm Group: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm's mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the role: A Talent Acquisition (TA) Intern will support the",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-15T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Talent%20Acquisition%20Intern%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/6d7551f7-34c3-46a2-a4e4-18b29f15338c",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7f9"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-3-paytm",
-    "title": "Talent Acquisition Intern - Bangalore",
-    "company": "Paytm",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Paytm Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm's mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the role: A Talent Acquisition (TA) Intern supports the recruitment team by sourcing and screening candidates, coordinating interviews, and",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-24T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Talent%20Acquisition%20Intern%20-%20Bangalore%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/88e8b698-8f03-4e09-9581-168f831fb3af",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7fa"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-4-paytm",
-    "title": "Talent Acquisition Intern - IT Recruitment",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Internship",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 12,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "Talent Acquisition Intern - Noida Noida, Uttar Pradesh HR \u2013 Recruitment / Intern / On-site Location: Noida Duration: 6 months Working days: 5 days work from office About Paytm Group: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm's mission is to serve half a billion Indians and bring them to the mainstream economy wit",
-    "salary": "\u20b940,000 - \u20b980,000 / month Stipend",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-12-03T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Talent%20Acquisition%20Intern%20-%20IT%20Recruitment%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/95eadc2b-27bf-40fe-b6e6-93aaeadd08f7",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7fb"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-5-paytm",
-    "title": "Talent Acquisition Specialist - Business Hiring (Non-Tech)",
-    "company": "Paytm",
-    "location": {
-      "city": "Gurugram",
-      "state": "Haryana",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the team: The Talent Acquisition team is at the core of Paytm\u2019s growth story. We identify, source, and secure the best talent across industri",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-17T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Talent%20Acquisition%20Specialist%20-%20Business%20Hiring%20(Non-Tech)%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/d071f4bc-e651-48dc-85ae-a8ee904fd0fa",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7fc"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-6-paytm",
-    "title": "Talent Acquisition- Tech Hiring",
-    "company": "Paytm",
-    "location": {
-      "city": "Noida",
-      "state": "Uttar Pradesh",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Paytm: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Role We are looking for a Talent Acquisition professional with strong experience in Tech Hiring and volume recruitment. The ideal cand",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-26T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Talent%20Acquisition-%20Tech%20Hiring%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/bd3569a5-cc0b-4bf5-9130-2f968da3140d",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7fd"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-7-paytm",
-    "title": "Team Leader-LRM- Mumbai",
-    "company": "Paytm",
-    "location": {
-      "city": "Mumbai",
-      "state": "Maharashtra",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Us: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the role: To sell products or services for a company and represent their brand. Also, to manage relationships with customers, serving as the ke",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-10T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Team%20Leader-LRM-%20Mumbai%20Paytm&locations=India",
-    "applicationUrl": "https://jobs.lever.co/paytm/825b704f-6933-4280-aa75-0f2095078077",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7fe"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-8-meesho",
-    "title": "Data Scientist III",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "golang"
-    ],
-    "description": "About the Team Our Data Science team is the Avengers to Meesho\u2019s S.H.I.E.L.D \ud83d\udee1\ufe0f. And why not? We are the ones who assemble during the toughest challenges and devise creative solutions, building intelligent systems for millions of our users looking at a thousand different categories of products. We\u2019ve barely scratched the surface, and have amazing challenges in charting the future of commerce for Bharat. Our typical day involves dealing with fraud detection, inventory optimisation, and platform ",
-    "salary": "\u20b918,00,000 - \u20b928,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-19T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Data%20Scientist%20III%20Meesho&locations=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/489fe662-5d28-4305-953e-91ee21e8538c",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff7ff"
-    },
-    "source": "foundit",
-    "sourceJobId": "foundit-9-meesho",
-    "title": "Data Scientist III (Team- Valmo)",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript"
-    ],
-    "description": "About us Meesho - Every story here begins with a spark of ambition and a touch of entrepreneurial magic. We're not just a platform \u2014 we're your partner in transforming dreams into reality. Our Mission Democratising internet commerce for everyone - Meesho started with a single idea in mind: to be an e-commerce destination for the next billion Indian consumers and enable small businesses to succeed online. We provide sellers with a range of industry-first benefits such as zero commission and affor",
-    "salary": "\u20b918,00,000 - \u20b928,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-28T05:33:47.074Z"
-    },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Data%20Scientist%20III%20(Team-%20Valmo)%20Meesho&locations=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/9c642a77-5b07-40a2-a7f0-0c396b2b97c5",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff800"
     },
     "source": "foundit",
-    "sourceJobId": "foundit-10-meesho",
-    "title": "Director \u2013 Sales, Meesho AI Services (MAS) | North India",
-    "company": "Meesho",
+    "sourceJobId": "foundit-0ab2a781a55e",
+    "title": "Software Engineer - API Platform",
+    "company": "Postman",
     "location": {
-      "city": "New Delhi",
-      "state": "Delhi",
+      "city": "Bengaluru",
+      "state": "Karnataka",
       "country": "India",
-      "remote": false
+      "remote": true
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "remote",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -2652,20 +1895,22 @@
       2026
     ],
     "requiredSkills": [
+      "node.js",
       "typescript",
-      "golang",
-      "machine learning"
+      "rest apis",
+      "docker",
+      "postgresql"
     ],
-    "description": "About MAS MAS's mission is to accelerate the build and deployment of an AI workforce for every business \u2014 from kirana to conglomerate. Our vision is to deliver a billion-plus workflows through our agents in ways that drive real client outcomes, not automation for its own sake. We go deep rather than wide. Today that means known, process-defined, repeatable service workflows \u2014 inbound contact-centre work (calls, chats, tickets), plus the outbound work that behaves like a cost workflow rather than",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Architect extensible collaboration tools and high-scale API simulation systems for 30M+ developers.",
+    "salary": "\u20b915,00,000 - \u20b924,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-12T05:33:47.074Z"
     },
-    "originalUrl": "https://www.foundit.in/srp/results?query=Director%20%E2%80%93%20Sales%2C%20Meesho%20AI%20Services%20(MAS)%20%7C%20North%20India%20Meesho&locations=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/122c2edd-ea44-41fd-a06f-ecc79588f6c6",
+    "originalUrl": "https://www.postman.com/company/careers",
+    "applicationUrl": "https://www.postman.com/company/careers",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -2678,60 +1923,7 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff801"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-1-meesho",
-    "title": "Director Data Science",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "golang"
-    ],
-    "description": "About the Team Our Data Science team is the Avengers to Meesho\u2019s S.H.I.E.L.D \ud83d\udee1\ufe0f. And why not? We are the ones who assemble during the toughest challenges and devise creative solutions, building intelligent systems for millions of our users looking at a thousand different categories of products. We\u2019ve barely scratched the surface, and have amazing challenges in charting the future of commerce for Bharat. About the role Are you a strategic thinker with a passion for solving large-scale problems u",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-21T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Director%20Data%20Science&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/64821526-2485-4a76-9198-610ee3938bb1",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+      "$date": "2026-11-05T10:40:34.004Z"
     }
   },
   {
@@ -2739,17 +1931,17 @@
       "$oid": "6aeac3bb0ec5060eda9ff802"
     },
     "source": "wellfound",
-    "sourceJobId": "wellfound-2-meesho",
-    "title": "Engineering Manager -Backend",
-    "company": "Meesho",
+    "sourceJobId": "wellfound-f7da68d19ca0",
+    "title": "Full Stack Engineer (React/Python)",
+    "company": "Postman",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
-      "remote": false
+      "remote": true
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "remote",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -2759,18 +1951,22 @@
       2026
     ],
     "requiredSkills": [
-      "typescript"
+      "react",
+      "python",
+      "typescript",
+      "docker",
+      "aws"
     ],
-    "description": "About Meesho Mission and Vision Meesho is India\u2019s fastest-growing internet commerce company, driven by the mission to democratize internet commerce for everyone (DICE). Our vision is to enable 100 million small businesses and entrepreneurs in India to succeed online, making online commerce accessible to all. This core purpose guides us in empowering sellers across the country and bringing a diverse range of products to first-time internet shoppers. By leveraging technology and a unique zero comm",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Ship full-stack features from schema designing to rich interactive API documentation consoles.",
+    "salary": "\u20b916,00,000 - \u20b925,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-30T05:33:47.074Z"
     },
-    "originalUrl": "https://wellfound.com/jobs?role=Engineering%20Manager%20-Backend&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/cb16706c-296f-4567-a41f-86206a54ee29",
+    "originalUrl": "https://www.postman.com/company/careers",
+    "applicationUrl": "https://www.postman.com/company/careers",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -2783,183 +1979,25 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+      "$date": "2026-11-05T10:40:34.005Z"
     }
   },
   {
     "_id": {
       "$oid": "6aeac3bb0ec5060eda9ff803"
     },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-3-meesho",
-    "title": "Engineering Manager \u2013 AI Engineering",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "typescript",
-      "machine learning"
-    ],
-    "description": "About Meesho Meesho is India's fastest-growing internet commerce company, on a mission to democratize e-commerce for everyone. We serve millions of customers and over 1.75 million sellers through technology-driven innovation, building the scalable systems that power Meesho's most critical surfaces \u2014 Search, Recommendations, Personalized Ranking, Logistics, Fraud Detection, and Image Match. The AI Platform sits at the heart of this. It serves a peak of 1M+ real-time deep-learning model inferences",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-14T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Engineering%20Manager%20%E2%80%93%20AI%20Engineering&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/a1cc7ad9-a233-4ba6-b53b-e56116f6ac27",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff804"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-4-meesho",
-    "title": "Engineering Manager- Platform",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "machine learning"
-    ],
-    "description": "About the Team When 5% of Indian households shop with us, it\u2019s important to build resilient systems to manage millions of orders every day. We\u2019ve done this \u2013 with zero downtime!Sounds impossible? Well, that\u2019s the kind of Engineering muscle that has helped Meesho become the e-commerce giant that it is today. We value speed over perfection, and see failures as opportunities to become better. We\u2019ve taken steps to inculcate a strong \u2018Founder\u2019s Mindset\u2019 across our engineering teams, making us grow an",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-11-23T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Engineering%20Manager-%20Platform&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/c428c9f1-d06c-47a3-aa61-7bd445401816",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff805"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-5-meesho",
-    "title": "Instructional Designer- ValMo Training",
-    "company": "Meesho",
-    "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "country": "India",
-      "remote": false
-    },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
-    "minExperienceMonths": 0,
-    "maxExperienceMonths": 24,
-    "eligibleBatches": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "requiredSkills": [
-      "machine learning",
-      "nlp"
-    ],
-    "description": "About the team You will be joining the Fulfillment and Experience (F&E) team at Meesho working on enabling Meesho deliver a world-class experience to their customers. As one of the prime movers in the e-commerce logistics ecosystem, the F&E team are solving industry-defining problems at scale that few startups can offer globally. About the Role We are looking for a talented Creative Designer to join our dynamic team. The ideal candidate will possess a strong visual aesthetic and a passion for cr",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
-    },
-    "deadline": {
-      "$date": "2026-12-02T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Instructional%20Designer-%20ValMo%20Training&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/3826c751-3f51-4f36-8c75-d2d65f172214",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "isActive": true,
-    "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff806"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-6-meesho",
-    "title": "Manager \u2013 GTM & Sales Strategy, Meesho AI Services (MAS)",
-    "company": "Meesho",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-1d6e49d905aa",
+    "title": "Software Engineer (Frontend)",
+    "company": "BrowserStack",
     "location": {
       "city": "Mumbai",
       "state": "Maharashtra",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full-time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -2969,20 +2007,134 @@
       2026
     ],
     "requiredSkills": [
+      "react",
+      "javascript",
       "typescript",
-      "golang",
-      "machine learning"
+      "html5",
+      "css3"
     ],
-    "description": "About the Team MAS's mission is to accelerate the build and deployment of an AI workforce for every business \u2014 from kirana to conglomerate. Our vision is to deliver a billion-plus workflows through our agents in ways that drive real client outcomes, not automation for its own sake. We go deep rather than wide. Today that means known, process-defined, repeatable service workflows \u2014 inbound contact-centre work (calls, chats, tickets), plus the outbound work that behaves like a cost workflow rather",
-    "salary": "\u20b928,00,000 - \u20b945,00,000 PA",
+    "description": "Build high-speed interactive test orchestration web consoles and device streaming interfaces.",
+    "salary": "\u20b914,00,000 - \u20b922,00,000 PA",
+    "postingDate": {
+      "$date": "2026-11-01T00:00:00Z"
+    },
+    "deadline": {
+      "$date": "2026-11-14T05:33:47.074Z"
+    },
+    "originalUrl": "https://www.browserstack.com/careers",
+    "applicationUrl": "https://www.browserstack.com/careers",
+    "firstDiscovered": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "lastVerified": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "isActive": true,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-04T05:33:47.152Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-05T10:40:34.006Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6aeac3bb0ec5060eda9ff804"
+    },
+    "source": "naukri",
+    "sourceJobId": "naukri-a9478088864b",
+    "title": "Software Engineer (Backend)",
+    "company": "BrowserStack",
+    "location": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full-time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "node.js",
+      "python",
+      "redis",
+      "postgresql",
+      "docker"
+    ],
+    "description": "Architect scalable device cloud routing infrastructure supporting millions of automated test sessions.",
+    "salary": "\u20b915,00,000 - \u20b923,00,000 PA",
+    "postingDate": {
+      "$date": "2026-11-01T00:00:00Z"
+    },
+    "deadline": {
+      "$date": "2026-11-23T05:33:47.074Z"
+    },
+    "originalUrl": "https://www.browserstack.com/careers",
+    "applicationUrl": "https://www.browserstack.com/careers",
+    "firstDiscovered": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "lastVerified": {
+      "$date": "2026-11-04T05:33:47.074Z"
+    },
+    "isActive": true,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-04T05:33:47.152Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-05T10:40:34.007Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6aeac3bb0ec5060eda9ff806"
+    },
+    "source": "indeed",
+    "sourceJobId": "indeed-db374f4b97fc",
+    "title": "Junior Full Stack Engineer",
+    "company": "Zerodha",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full-time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "python",
+      "go",
+      "postgresql",
+      "react",
+      "linux"
+    ],
+    "description": "Craft resilient, distraction-free trading interfaces and ultra-fast financial market execution APIs.",
+    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
     "postingDate": {
       "$date": "2026-11-01T00:00:00Z"
     },
     "deadline": {
       "$date": "2026-11-16T05:33:47.074Z"
     },
-    "originalUrl": "https://wellfound.com/jobs?role=Manager%20%E2%80%93%20GTM%20%26%20Sales%20Strategy%2C%20Meesho%20AI%20Services%20(MAS)&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/9401d014-8199-4861-8f65-42fda8160e0c",
+    "originalUrl": "https://zerodha.com/careers",
+    "applicationUrl": "https://zerodha.com/careers",
     "firstDiscovered": {
       "$date": "2026-11-04T05:33:47.074Z"
     },
@@ -2995,25 +2147,23 @@
       "$date": "2026-11-04T05:33:47.152Z"
     },
     "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+      "$date": "2026-11-05T10:40:34.008Z"
     }
   },
   {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff807"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-7-meesho",
-    "title": "Principal Data Scientist",
-    "company": "Meesho",
+    "_id": "6aec5e2da766f529866cfc32",
+    "source": "internshala",
+    "sourceJobId": "internshala-53791749e97d",
+    "title": "Software Development Engineer I (Backend - Go/Java)",
+    "company": "Paytm",
     "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full_time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -3023,50 +2173,45 @@
       2026
     ],
     "requiredSkills": [
-      "typescript",
-      "golang"
+      "Go",
+      "Java",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker",
+      "Git"
     ],
-    "description": "About the Team Our Data Science team is the Avengers to Meesho\u2019s S.H.I.E.L.D \ud83d\udee1\ufe0f. And why not? We are the ones who assemble during the toughest challenges and devise creative solutions, building intelligent systems for millions of our users looking at a thousand different categories of products. We\u2019ve barely scratched the surface, and have amazing challenges in charting the future of commerce for Bharat. About the Role As a Principal Data Scientist in our AdTech team, you\u2019ll drive innovation in ",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
+    "description": "Join Paytm Core Payments Engineering team as SDE I. You will design, build, and deploy low-latency microservices handling millions of daily financial transactions.",
+    "salary": {
+      "min": 1000000,
+      "max": 1600000,
+      "currency": "INR",
+      "period": "yearly"
     },
-    "deadline": {
-      "$date": "2026-11-25T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Principal%20Data%20Scientist&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/3d5bf582-493f-4298-b7de-e42a7d58a358",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/sde1-backend",
+    "applicationUrl": "https://careers.paytm.com/job/sde1-backend",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
     "isActive": true,
     "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
   },
   {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff808"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-8-meesho",
-    "title": "Security Architect - AI-Powered Security Engineering",
-    "company": "Meesho",
+    "_id": "6aec5e2da766f529866cfc33",
+    "source": "foundit",
+    "sourceJobId": "foundit-0ab1ac0b56d8",
+    "title": "Frontend Developer (React.js/Next.js)",
+    "company": "Paytm",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full_time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -3076,50 +2221,45 @@
       2026
     ],
     "requiredSkills": [
-      "machine learning",
-      "git"
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "REST APIs"
     ],
-    "description": "Security Architect - AI-Powered Security Engineering About the Team The security team at Meesho is like the Avengers to Meesho's S.H.I.E.L.D. When 5% of Indian households shop with us, it\u2019s important to build resilient systems to manage millions of orders every day. We\u2019ve done this, with zero downtime! We value speed over perfection, and see failures as opportunities to become better. By 2030, Meesho will be the world\u2019s most trusted and secure digital ecosystem, operating on an AI-native, Zero-T",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
+    "description": "Build snappy, accessible, and responsive merchant and consumer web dashboards at Paytm using modern React, TypeScript, and state management.",
+    "salary": {
+      "min": 900000,
+      "max": 1500000,
+      "currency": "INR",
+      "period": "yearly"
     },
-    "deadline": {
-      "$date": "2026-12-04T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Security%20Architect%20-%20AI-Powered%20Security%20Engineering&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/f2de8c5f-1636-428d-aaea-af1400142975",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/frontend-developer",
+    "applicationUrl": "https://careers.paytm.com/job/frontend-developer",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
     "isActive": true,
     "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
   },
   {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff809"
-    },
+    "_id": "6aec5e2da766f529866cfc34",
     "source": "wellfound",
-    "sourceJobId": "wellfound-9-meesho",
-    "title": "Security Engineer III - Infra Security",
-    "company": "Meesho",
+    "sourceJobId": "wellfound-fa9a5db78aa1",
+    "title": "Mobile Software Engineer (Android/Kotlin)",
+    "company": "Paytm",
     "location": {
-      "city": "Bengaluru",
-      "state": "Karnataka",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "hybrid",
+    "employmentType": "full_time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -3129,49 +2269,45 @@
       2026
     ],
     "requiredSkills": [
-      "machine learning"
+      "Android",
+      "Kotlin",
+      "Jetpack Compose",
+      "Coroutines",
+      "REST APIs",
+      "Git"
     ],
-    "description": "About the Team The security team at Meesho is like the Avengers to Meesho's S.H.I.E.L.D. After all, when 5% of Indian households shop with us, it\u2019s important to build resilient systems to manage millions of orders every day. We\u2019ve done this \u2013 with zero downtime! \ud83d\ude0e Sounds impossible? Well, that\u2019s the kind of Engineering muscle that has helped Meesho become the e-commerce giant it is today. We value speed over perfection, and see failures as opportunities to become better. We\u2019ve taken steps to in",
-    "salary": "\u20b918,00,000 - \u20b928,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
+    "description": "Develop high-performance features in Paytm consumer application with Jetpack Compose, Kotlin coroutines, and clean architecture.",
+    "salary": {
+      "min": 950000,
+      "max": 1550000,
+      "currency": "INR",
+      "period": "yearly"
     },
-    "deadline": {
-      "$date": "2026-11-18T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Security%20Engineer%20III%20-%20Infra%20Security&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/9b5a5436-cdc3-4bcd-8e5e-b7294af185d5",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/android-engineer",
+    "applicationUrl": "https://careers.paytm.com/job/android-engineer",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
     "isActive": true,
     "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
   },
   {
-    "_id": {
-      "$oid": "6aeac3bb0ec5060eda9ff80a"
-    },
-    "source": "wellfound",
-    "sourceJobId": "wellfound-10-meesho",
-    "title": "Security Engineer IV",
-    "company": "Meesho",
+    "_id": "6aec5e2da766f529866cfc35",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-93a71bac7327",
+    "title": "Full Stack Developer (Node.js/React)",
+    "company": "Paytm",
     "location": {
       "city": "Bengaluru",
       "state": "Karnataka",
       "country": "India",
       "remote": false
     },
-    "workMode": "on-site",
-    "employmentType": "Full-time",
+    "workMode": "on_site",
+    "employmentType": "full_time",
     "minExperienceMonths": 0,
     "maxExperienceMonths": 24,
     "eligibleBatches": [
@@ -3181,31 +2317,840 @@
       2026
     ],
     "requiredSkills": [
-      "machine learning"
+      "Node.js",
+      "Express",
+      "React",
+      "MongoDB",
+      "TypeScript",
+      "Docker"
     ],
-    "description": "About the Team The security team at Meesho is like the Avengers to Meesho's S.H.I.E.L.D. After all, when 5% of Indian households shop with us, it\u2019s important to build resilient systems to manage millions of orders every day. We\u2019ve done this \u2013 with zero downtime! \ud83d\ude0e Sounds impossible? Well, that\u2019s the kind of Engineering muscle that has helped Meesho become the e-commerce giant it is today. We value speed over perfection, and see failures as opportunities to become better. We\u2019ve taken steps to in",
-    "salary": "\u20b912,00,000 - \u20b918,00,000 PA",
-    "postingDate": {
-      "$date": "2026-11-01T00:00:00Z"
+    "description": "Full stack engineering role building internal operations tooling, merchant onboarding pipelines, and real-time transaction verification webapps.",
+    "salary": {
+      "min": 900000,
+      "max": 1400000,
+      "currency": "INR",
+      "period": "yearly"
     },
-    "deadline": {
-      "$date": "2026-11-27T05:33:47.074Z"
-    },
-    "originalUrl": "https://wellfound.com/jobs?role=Security%20Engineer%20IV&location=India",
-    "applicationUrl": "https://jobs.lever.co/meesho/f4e2e8e1-6863-4fe0-85fb-7840189cad3f",
-    "firstDiscovered": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
-    "lastVerified": {
-      "$date": "2026-11-04T05:33:47.074Z"
-    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/fullstack-developer",
+    "applicationUrl": "https://careers.paytm.com/job/fullstack-developer",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
     "isActive": true,
     "__v": 0,
-    "createdAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc36",
+    "source": "naukri",
+    "sourceJobId": "naukri-6d207193bd18",
+    "title": "Software Engineering Intern (Backend)",
+    "company": "Paytm",
+    "location": {
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "remote": false
     },
-    "updatedAt": {
-      "$date": "2026-11-04T05:33:47.152Z"
-    }
+    "workMode": "hybrid",
+    "employmentType": "internship",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 12,
+    "eligibleBatches": [
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Python",
+      "Django",
+      "FastAPI",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "description": "6-month developer internship focusing on backend API services, automated test suites, and database query optimization for payment gateways.",
+    "salary": {
+      "min": 35000,
+      "max": 50000,
+      "currency": "INR",
+      "period": "monthly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/backend-intern",
+    "applicationUrl": "https://careers.paytm.com/job/backend-intern",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc37",
+    "source": "indeed",
+    "sourceJobId": "indeed-4afbbf4412ad",
+    "title": "Backend Engineer (Python/FastAPI)",
+    "company": "Paytm",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": true
+    },
+    "workMode": "remote",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Python",
+      "FastAPI",
+      "Redis",
+      "PostgreSQL",
+      "Docker",
+      "PyTest"
+    ],
+    "description": "Build high-throughput asynchronous microservices with FastAPI, Redis caching, and automated integration testing pipelines.",
+    "salary": {
+      "min": 1000000,
+      "max": 1600000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/python-fastapi",
+    "applicationUrl": "https://careers.paytm.com/job/python-fastapi",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc38",
+    "source": "internshala",
+    "sourceJobId": "internshala-30602e761c52",
+    "title": "Software Development Engineer I (APIs & Microservices)",
+    "company": "Paytm",
+    "location": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "MySQL",
+      "Git",
+      "REST APIs"
+    ],
+    "description": "Engineer robust event-driven backend services with Apache Kafka and Spring Boot for real-time banking integrations.",
+    "salary": {
+      "min": 1100000,
+      "max": 1700000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/sde1-microservices",
+    "applicationUrl": "https://careers.paytm.com/job/sde1-microservices",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc39",
+    "source": "foundit",
+    "sourceJobId": "foundit-4b3e7b07e2a7",
+    "title": "Frontend Engineer (TypeScript/Vue/React)",
+    "company": "Paytm",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "TypeScript",
+      "React",
+      "Vue.js",
+      "CSS3",
+      "Webpack",
+      "Vite"
+    ],
+    "description": "Design sleek user interfaces, manage client-side state, and optimize Core Web Vitals across web checkout flows.",
+    "salary": {
+      "min": 900000,
+      "max": 1400000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/frontend-ts",
+    "applicationUrl": "https://careers.paytm.com/job/frontend-ts",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3a",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-33dd643dfaf7",
+    "title": "Mobile Developer Intern (Flutter / React Native)",
+    "company": "Paytm",
+    "location": {
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "remote": true
+    },
+    "workMode": "remote",
+    "employmentType": "internship",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 12,
+    "eligibleBatches": [
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Flutter",
+      "Dart",
+      "React Native",
+      "REST APIs",
+      "Git"
+    ],
+    "description": "Cross-platform mobile developer internship building interactive widgets and seamless animations for developer tools and SDKs.",
+    "salary": {
+      "min": 30000,
+      "max": 45000,
+      "currency": "INR",
+      "period": "monthly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/mobile-intern",
+    "applicationUrl": "https://careers.paytm.com/job/mobile-intern",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3b",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-79e8e82e1099",
+    "title": "Software Engineer - Payment Gateway Core",
+    "company": "Paytm",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Go",
+      "Distributed Systems",
+      "gRPC",
+      "PostgreSQL",
+      "Docker",
+      "Git"
+    ],
+    "description": "Work on the core payment processing engine at Paytm. Build high-concurrency Go services with low latency and high availability.",
+    "salary": {
+      "min": 1200000,
+      "max": 1800000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/se-payments",
+    "applicationUrl": "https://careers.paytm.com/job/se-payments",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3c",
+    "source": "naukri",
+    "sourceJobId": "naukri-72e707e24daa",
+    "title": "SDE I (Distributed Systems & Database)",
+    "company": "Paytm",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Java",
+      "Distributed Systems",
+      "Redis",
+      "Kafka",
+      "SQL",
+      "Git"
+    ],
+    "description": "Design high-volume ledger storage engines and asynchronous queues handling tens of thousands of requests per second.",
+    "salary": {
+      "min": 1150000,
+      "max": 1750000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/sde1-distributed",
+    "applicationUrl": "https://careers.paytm.com/job/sde1-distributed",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3d",
+    "source": "indeed",
+    "sourceJobId": "indeed-43b351ac6b7d",
+    "title": "Junior Full Stack Engineer (MERN)",
+    "company": "Paytm",
+    "location": {
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "REST APIs"
+    ],
+    "description": "Develop end-to-end features on the MERN stack for Paytm partner portals and automated developer onboarding systems.",
+    "salary": {
+      "min": 850000,
+      "max": 1350000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.paytm.com/job/junior-mern",
+    "applicationUrl": "https://careers.paytm.com/job/junior-mern",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3e",
+    "source": "internshala",
+    "sourceJobId": "internshala-d429990b525b",
+    "title": "Software Development Engineer I (Frontend - React/Next.js)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Web Performance"
+    ],
+    "description": "Build high-performance web applications and buyer web experience at Meesho serving 150M+ users with sub-second page loads.",
+    "salary": {
+      "min": 1200000,
+      "max": 1800000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/sde1-frontend",
+    "applicationUrl": "https://careers.meesho.com/job/sde1-frontend",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc3f",
+    "source": "foundit",
+    "sourceJobId": "foundit-1dfdecde4cd7",
+    "title": "SDE I - Backend (Java/Spring Boot)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Kafka",
+      "MySQL",
+      "Redis"
+    ],
+    "description": "Architect scalable order fulfillment and catalog microservices processing over 3 million orders every day during sale events.",
+    "salary": {
+      "min": 1400000,
+      "max": 2000000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/sde1-backend-java",
+    "applicationUrl": "https://careers.meesho.com/job/sde1-backend-java",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc40",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-a3e0855a1057",
+    "title": "Full Stack Developer (React & Node.js)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "REST APIs"
+    ],
+    "description": "Develop supplier portal apps enabling over 1 million Indian MSMEs to manage inventory, catalog listings, and shipments.",
+    "salary": {
+      "min": 1100000,
+      "max": 1700000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/fullstack-supplier",
+    "applicationUrl": "https://careers.meesho.com/job/fullstack-supplier",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc41",
+    "source": "linkedin",
+    "sourceJobId": "linkedin-99d0302140d6",
+    "title": "Software Engineering Intern (Discovery & Search)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": true
+    },
+    "workMode": "remote",
+    "employmentType": "internship",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 12,
+    "eligibleBatches": [
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Python",
+      "Algorithms",
+      "Data Structures",
+      "Elasticsearch",
+      "Git"
+    ],
+    "description": "Internship with the search & discovery engineering team. Build indexing pipelines, query tokenizers, and relevance rankers.",
+    "salary": {
+      "min": 45000,
+      "max": 65000,
+      "currency": "INR",
+      "period": "monthly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/sde-intern-discovery",
+    "applicationUrl": "https://careers.meesho.com/job/sde-intern-discovery",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc42",
+    "source": "naukri",
+    "sourceJobId": "naukri-e1fe909e4e0f",
+    "title": "Software Engineer - Backend Services (Python)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Celery",
+      "Redis",
+      "Docker"
+    ],
+    "description": "Design asynchronous task runners, real-time webhook listeners, and third-party logistics tracking backend microservices.",
+    "salary": {
+      "min": 1200000,
+      "max": 1800000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/se-backend-python",
+    "applicationUrl": "https://careers.meesho.com/job/se-backend-python",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc43",
+    "source": "indeed",
+    "sourceJobId": "indeed-543524d85e1c",
+    "title": "Mobile Engineer (Android/Kotlin)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Android",
+      "Kotlin",
+      "MVVM",
+      "Coroutines",
+      "Dagger-Hilt",
+      "REST APIs"
+    ],
+    "description": "Build high-speed shopping flows on the Meesho Android app, focusing on low APK size, memory optimization, and butter-smooth scrolling.",
+    "salary": {
+      "min": 1300000,
+      "max": 1900000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/android-engineer",
+    "applicationUrl": "https://careers.meesho.com/job/android-engineer",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc44",
+    "source": "internshala",
+    "sourceJobId": "internshala-e6738cd40214",
+    "title": "Backend Engineer I (Golang & High Scale)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": false
+    },
+    "workMode": "hybrid",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Go",
+      "Concurrency",
+      "gRPC",
+      "PostgreSQL",
+      "Kafka",
+      "Docker"
+    ],
+    "description": "Write fast, concurrent Go backend daemons for real-time order processing, push notifications, and pricing calculations.",
+    "salary": {
+      "min": 1400000,
+      "max": 2100000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/backend-golang",
+    "applicationUrl": "https://careers.meesho.com/job/backend-golang",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc45",
+    "source": "foundit",
+    "sourceJobId": "foundit-bf8975620922",
+    "title": "Frontend Engineer (Web Performance & UI)",
+    "company": "Meesho",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": true
+    },
+    "workMode": "remote",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Web Vitals",
+      "Jest"
+    ],
+    "description": "Craft pixel-perfect, accessible UI components and design system elements for Meesho web experience and affiliate creator tools.",
+    "salary": {
+      "min": 1150000,
+      "max": 1650000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://careers.meesho.com/job/frontend-perf",
+    "applicationUrl": "https://careers.meesho.com/job/frontend-perf",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
+  },
+  {
+    "_id": "6aec5e2da766f529866cfc46",
+    "source": "wellfound",
+    "sourceJobId": "wellfound-9553a7309874",
+    "title": "Full Stack Software Engineer (React / Go / OpenTelemetry)",
+    "company": "SigNoz",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "remote": true
+    },
+    "workMode": "remote",
+    "employmentType": "full_time",
+    "minExperienceMonths": 0,
+    "maxExperienceMonths": 24,
+    "eligibleBatches": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "requiredSkills": [
+      "Go",
+      "React",
+      "TypeScript",
+      "ClickHouse",
+      "Docker",
+      "OpenTelemetry"
+    ],
+    "description": "Build open-source observability platform components. Develop real-time metrics dashboards in React and high-throughput query backends in Go.",
+    "salary": {
+      "min": 1400000,
+      "max": 2200000,
+      "currency": "INR",
+      "period": "yearly"
+    },
+    "postingDate": "2026-11-05T10:45:01.507804Z",
+    "deadline": "2026-12-31T23:59:59.000Z",
+    "originalUrl": "https://signoz.io/careers/full-stack-engineer",
+    "applicationUrl": "https://signoz.io/careers/full-stack-engineer",
+    "firstDiscovered": "2026-11-05T10:45:01.507804Z",
+    "lastVerified": "2026-11-05T10:45:01.507804Z",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-11-05T10:45:01.507804Z",
+    "updatedAt": "2026-11-05T10:45:01.507804Z"
   }
 ]
