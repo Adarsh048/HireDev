@@ -75,3 +75,4 @@ async def get_applications_analytics(current_user: dict = Depends(get_current_us
             "interviewRate": interview_rate,
         },
     }
+

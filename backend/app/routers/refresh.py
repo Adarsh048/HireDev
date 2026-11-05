@@ -50,3 +50,4 @@ async def trigger_refresh(current_user: dict = Depends(get_current_user)):
             "success": True,
             "message": "Job discovery refresh completed",
         }
+

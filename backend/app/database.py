@@ -120,3 +120,4 @@ def init_db():
             logger.info("Demo user 'demo.engineer@nexhire.in' initialized.")
     except Exception as e:
         logger.error(f"Error seeding demo user: {e}")
+

@@ -131,3 +131,4 @@ async def get_current_user(
     clean_user.pop("passwordHash", None)
     clean_user["userId"] = clean_user["id"]
     return clean_user
+

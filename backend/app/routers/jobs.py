@@ -248,3 +248,4 @@ async def toggle_save_job(
             "message": "Job saved",
             "data": {"saved": True},
         }
+

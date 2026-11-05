@@ -136,3 +136,4 @@ async def update_application(
         "message": "Application updated successfully",
         "data": {"application": app_clean},
     }
+
